@@ -23,7 +23,7 @@
     <main class="tmpl-post">
       <h1>Accounting Error is not Cash Flow</h1>
 
-<time datetime="2021-01-27">27 Jan 2021</time><a href="/tags/rants/" class="post-tag">rants</a><a href="/tags/money/" class="post-tag">money</a>
+<time datetime="2021-01-27">27 Jan 2021</time><a href="/tags/random/" class="post-tag">random</a>
 
 <p>When the topic of raising taxes on high-earning individuals comes up, a frequent objection is that &quot;$400,000 isn't even that much in a lot of places&quot;, or &quot;$500,000 doesn't go that far for a family of four&quot;.</p>
 <p>This claim is almost always backed up by what I would consider one of the worst financial charts on the entire internet, courtesy of &quot;Financial Samurai&quot;:</p>
@@ -91,6 +91,6 @@
 
     <footer></footer>
 
-    <!-- Current page: /posts/accounting-error-is-not-cash-flow/ -->
+    <!-- Current page: /accounting-error-is-not-cash-flow -->
   </body>
 </html>
