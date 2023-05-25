@@ -1,10 +1,11 @@
 ---
 title: Just Say "No" to Training Wheels
+permalink: posts/no-training-wheels/index.html
 description: Why skipping training wheels is the best path for kids as young as three.
 date: 2021-01-27
 tags: bicycle
 layout: layouts/post.njk
-draft: true
+eleventyExcludeFromCollections: true
 ---
 
 # "Wow! No Training Wheels!"
