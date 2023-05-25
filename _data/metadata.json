@@ -1,20 +1,20 @@
 {
   "title": "Ryan Cavanaugh",
-  "url": "https://rcavanaugh.com/",
+  "url": "https://searyanc.dev/",
   "language": "en",
-  "description": "Unspecified writings",
+  "description": "Ryan Cavanaugh's blog",
   "feed": {
-    "subtitle": "Unspecified writings",
+    "subtitle": "Ryan Cavanaugh's blog",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://rcavanaugh.com/"
+    "id": "https://searyanc.dev/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://rcavanaugh.com//feed/feed.json"
+    "url": "https://searyanc.dev/feed/feed.json"
   },
   "author": {
     "name": "Ryan Cavanaugh",
-    "url": "https://twitter.com/RyanCavanaugh"
+    "url": "https://bsky.app/profile/searyanc.dev"
   }
 }
