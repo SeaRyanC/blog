@@ -1,10 +1,13 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: About
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About Me
+  key: About
   order: 3
 ---
 
-I am a person that writes stuff.
+Preferred Socials:
+ * https://bsky.app/profile/searyanc.dev
+ * https://fosstodon.org/@SeaRyanC (deprecated)
+ * https://twitter.com/SeaRyanC (deprecated)
