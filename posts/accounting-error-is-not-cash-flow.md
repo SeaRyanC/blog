@@ -9,11 +9,11 @@ layout: layouts/post.njk
 eleventyExcludeFromCollections: true
 ---
 
-When the topic of raising taxes on high-earning individuals comes up, a frequent objection is that "$400,000 isn't even that much in a lot of places", or "$500,000 doesn't go that far for a family of four".
+When the topic of raising taxes on high-earning individuals comes up, a frequent objection is that "$400,000 isn't even that much in a lot of places", or "$500,000 doesn't go that far for a family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
 
 This claim is almost always backed up by what I would consider one of the worst financial charts on the entire internet, courtesy of "Financial Samurai":
 
-![A chart showing a list of expense which will be detailed later](https://i2.wp.com/financialsamurai.com/wp-content/uploads/2020/10/400K-budget.png?fit=1456,9999)
+![A chart showing a list of expenses which will be detailed later](/img/400K-budget.webp)
 
 The chart here claims to compute an *annual* "cash flow" of $34, or $3 per month.
 
@@ -35,9 +35,36 @@ Your niece, Sandy, has set up a lemonade stand. It seems to be doing great. At t
 
 "How so? I saw a long line around the block when I stopped by" you reply.
 
-Sandy, furious, pulls a single dollar bill out of her pocket. "I talked to my accountant and here's where I stand. I sold 100 cups of lemonade for $1 each. The lemons and sugar cost me $50, and I paid another $10 in taxes. I put $20 into my piggy bank, spent $10 at the arcade, stuffed $5 under my mattress, and deposited $4 into my savings account. At the end of the week, I only have $1 of cash flow after expenses to pay for miscellaneous! One miserable buck!" she complains as she waves the dollar around in her hand. "A single dollar more in taxes and I'm in the red."
+Sandy, furious, pulls a single dollar bill out of her pocket. She begins her rant:
 
-"Hold on, Sandy." you say. "Your revenue was $100 on a cost of $50, for a profit of $50. You lost $10 to taxes, leading to $40 in net profit. You spent $10 of that at the arcade, and *saved* the other $30: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you're holding right now. All your money is accounted for and you're doing very well. Great job!"
+> I talked to my accountant and here's where I stand. I sold 100 cups of lemonade for $1 each, so have $100 in income.
+
+> The lemons and sugar cost me $50, and I paid another $10 in taxes.
+
+> I put $20 into my piggy bank, spent $10 at the arcade, stuffed $5 under my mattress, and deposited $4 into my savings account.
+
+> At the end of the week, I only have $1 of cash flow after expenses to pay for miscellaneous! One miserable buck!
+
+She complains as she waves the dollar around in her hand. "A single dollar more in taxes and I'm in the red!"
+
+Her accountant made a chart detailing how dire the scenario is:
+
+|Sandy's P&L|Gains/Loss|
+|-------|----:|
+|Sales|$100|
+|**Total Income**|$100|
+|Lemons|(25)|
+|Sugar|(25)|
+|Taxes|(10)|
+|**Net Income**|$40|
+|Piggy Bank|(20)|
+|Arcade|(10)|
+|Mattress|(5)|
+|Savings Account|(4)|
+|**Total Expenses**|(39)|
+|*Remaining Cash Flow*|$1|
+
+"Hold on, Sandy." you say. "Your revenue was $100 on a cost of $50, for a profit of $50. You lost $10 to taxes, leading to $40 in net profit. You spent $10 of that at the arcade, and *saved* the other $30: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you're holding right now. All your money is accounted for and you're doing very well. Great job!".
 
 Sandy seems confused. "Why did my accountant say I had one dollar leftover, then? I feel like I'm barely scraping by here."
 
@@ -45,7 +72,26 @@ Sandy seems confused. "Why did my accountant say I had one dollar leftover, then
 
 Sandy seems even angrier. "The numbers *have* to add up to $0? I'm always going to be broke? That's not fair! I should have way more than $1 of cash flow here based on how much lemonade I'm selling."
 
-"Your cash flow is $40, because that's how much money you had after subtracting your expenses from your income. The $1 is the accounting error, not the cash flow. You need to find an accountant who knows what they're talking about. And if your taxes go up by $5, you can choose to spend less at the arcade, or you can save less. It's up to you, but your business will still be turning a tidy profit. I wouldn't worry about it."
+You draw her a new chart:
+
+||Inflow|Outflow|
+|-------|----:|---:|
+|**Income**|||
+|Sales|$100||
+|**Expenses**|||
+|Lemons||$25|
+|Sugar||$25|
+|Taxes||$10|
+|**Spending**|||
+|Arcade||$10|
+|**Saving**|||
+|Piggy Bank||$20|
+|Mattress||$5|
+|Savings Account||$4|
+|Pocket Dollar||$1|
+|*Total*|$100|$100|
+
+"Your cash flow is $40, because that's how much money you had after subtracting your expenses from your income. The $1 was the accounting error, not the cash flow. You need to find an accountant who knows what they're talking about. And if your taxes go up by $5, you can choose to spend less at the arcade, or you can save less. It's up to you, but your business will still be turning a tidy profit. I wouldn't worry about it."
 
 "Wow", says Sandy, "I guess that's what I get for hiring a cut-rate accountant. Thanks for clearing it up for me. It's sure good to know my business is doing 40 times better than I thought!"
 
@@ -87,7 +133,39 @@ There's also the matter of the car payment. This is definitely a form of savings
 
 I also had to normalize the top half of the chart to account for some hand-wavey math around tax credits that isn't really explained. The fixed version looks like this:
 
-As we can see, the family is *saving* $104,459 per year with an accounting error of $34.
+||Spent/(Earned)|Saved|
+|-------|------:|--------:|
+|Income| ($400,000)||
+|401k| $9,360 | $29,640 |
+|Taxes| $96,870 |    |
+|Daycare| $37,200 |    |
+|Preschool| $26,400 |    |
+|Food| $24,000 |    |
+|529 Plan|    | $18,000 |
+|Mortgage| $28,333 | $52,619 |
+|Property tax| $24,804 |    |
+|Property insurance| $1,560 |    |
+|Property maintenance| $2,760 |    |
+|Utilities| $4,200 |    |
+|Life insurance| $1,440 |    |
+|Umbrella policy| $540 |    |
+|Health Care| $7,440 |    |
+|Baby & toddler items| $2,400 |    |
+|Three weeks of vacation| $7,200 |    |
+|Entertainment| $3,600 |    |
+|Car payment|    | $4,200 |
+|Car depreciation| $4,200 |    |
+|Car ins./maintenance| $1,800 |    |
+|Gas| $2,400 |    |
+|Mobile phone| $1,800 |    |
+|Clothes for four| $2,400 |    |
+|Personal care products| $1,800 |    |
+|Charity| $3,000 |    |
+|Cash in your pocket|    | $34 |
+|Total| $(104,493)| $104,493 |
+|Accounting Error| $0 | $0|
+
+As we can see, the family is *saving* $104,493 per year.
 
 Adding the "cash in your pocket" line item, in honor of Sandy, we get an annual savings of $104,493, and an accounting error of $0.
 
@@ -97,7 +175,7 @@ Financial Samurai's hypothetical family is increasing their net worth by approxi
 
 Again, I think there are legitimate debates to be had about what the magical word "rich" means in this country, and whether Financial Samurai's hypothetical family could cut back a bit, but two things are beyond debate.
 
-First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively enviable lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing. Cost of living figures in to these numbers a little, but not a lot - Netflix, a gallon of milk, and a tube of lipstick are all basically the same price no matter where you live.
+First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively enviable lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing.
 
 Second: the $34 number at the bottom of the chart is *pure fiction*. It does not correspond to any actual fact about this family's finances. As much as we might laugh at Sandy's mistake of her missing dollar compared to the $40 of profit her business actually turned, the Financial Samurai distortion is worse: it understates this family's annual savings by a factor of *3,000*. It does not belong here in any form, and its inclusion as "cash flow" is a hoax.
 
@@ -110,5 +188,3 @@ Sadly, many major news outlets, including those who should have the financial sa
 You might point to the line item for 529 and say, since this money will eventually be spent on college tuition, it isn't really savings at all, but rather an expenditure that we're booking now instead of later. The same for 401(k) contributions -- these dollars will likely be spent in retirement, thus are future expenditures.
 
 Much like the original chart misappropriates what "cash flow" is, this objection misappropriates what "savings" means. The final fate of every saved dollar is either to be spent on something, or passed on to your heirs when you die. We could certainly categorize the family's savings into earmarked savings and nonearmarked savings. Under this metric, the house payment becomes $52,000 of eventually-inherited wealth, and the remainder is earmarked savings that will be spent down in retirement. With 20 years of such savings, they'll be passing down an estate worth over *a million dollars* to their heirs. The median inheritance in the United States is $69,000, or less than a year and a half of non-earmarked savings for our "cash-strapped" family. Not too shabby.
-
-### 
