@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://searyanc.dev/accounting-error-is-not-cash-flow</loc>
+    <lastmod>2021-01-27</lastmod>
+  </url>
+  
+  <url>
     <loc>https://searyanc.dev/posts/no-training-wheels/</loc>
     <lastmod>2021-01-27</lastmod>
   </url>
@@ -33,6 +38,11 @@
   
   <url>
     <loc>https://searyanc.dev/tags/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/tags/random/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
