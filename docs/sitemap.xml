@@ -2,26 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://searyanc.dev/posts/firstpost/</loc>
-    <lastmod>2018-05-01</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/posts/secondpost/</loc>
-    <lastmod>2018-07-04</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/posts/thirdpost/</loc>
-    <lastmod>2018-08-24</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/posts/fourthpost/</loc>
-    <lastmod>2018-09-30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://searyanc.dev/posts/no-training-wheels/</loc>
     <lastmod>2021-01-27</lastmod>
   </url>
@@ -57,32 +37,12 @@
   </url>
   
   <url>
-    <loc>https://searyanc.dev/tags/another-tag/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/tags/number-2/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/tags/second-tag/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/tags/bicycle/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
     <loc>https://searyanc.dev/tags/hobbies/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
   <url>
-    <loc>https://searyanc.dev/tags/posts-with-two-tags/</loc>
+    <loc>https://searyanc.dev/tags/bicycle/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
 </urlset>
