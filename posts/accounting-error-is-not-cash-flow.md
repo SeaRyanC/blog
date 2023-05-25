@@ -6,7 +6,7 @@ date: 2021-01-27
 tags:
  - random
 layout: layouts/post.njk
-eleventyExcludeFromCollections: true
+draft: true
 ---
 
 When the topic of raising taxes on high-earning individuals comes up, a frequent objection is that "$400,000 isn't even that much in a lot of places", or "$500,000 doesn't go that far for a family of four".
