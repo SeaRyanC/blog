@@ -32,7 +32,27 @@
   </url>
   
   <url>
-    <loc>https://searyanc.dev/tags/hobbies/</loc>
+    <loc>https://searyanc.dev/tags/pixels/</loc>
     <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/tags/3d/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/tags/typescript/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/tags/openscad/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/posts/scadr/</loc>
+    <lastmod>2023-05-28</lastmod>
   </url>
 </urlset>

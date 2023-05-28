@@ -10,9 +10,15 @@
     "url": "https://bsky.app/profile/searyanc.dev"
   },
   "items": [{
+      "id": "https://searyanc.dev/posts/scadr/",
+      "url": "https://searyanc.dev/posts/scadr/",
+      "title": "scadr: renders multi-part OpenSCAD files",
+      "content_html": "<p>This solves a very annoying problem:</p>\n<blockquote>\n<p>Given an OpenSCAD file that produces multiple parts, how do I get an <code>.stl</code> file for each of them?</p>\n</blockquote>\n<p>This solution doesn't require any awkward makefiles or other scripts and can just use a module naming convention. I like it.</p>\n<p>Now live at <a href=\"https://github.com/SeaRyanC/scadr#readme\">https://github.com/SeaRyanC/scadr#readme</a></p>\n",
+      "date_published": "2023-05-28T00:00:00Z"
+    },{
       "id": "https://searyanc.dev/posts/firaga-io/",
       "url": "https://searyanc.dev/posts/firaga-io/",
-      "title": "Launching firaga.io",
+      "title": "firaga.io: planner for pixel-based arts and crafts",
       "content_html": "<p>Check it out at <a href=\"https://firaga.io/\">https://firaga.io/</a></p>\n",
       "date_published": "2023-05-24T00:00:00Z"
     }

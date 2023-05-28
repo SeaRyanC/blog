@@ -9,9 +9,9 @@ layout: layouts/post.njk
 eleventyExcludeFromCollections: true
 ---
 
-When the topic of raising taxes on high-earning individuals comes up, a frequent objection is that "$400,000 isn't even that much in a lot of places", or "$500,000 doesn't go that far for a family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
+A popular form of clickbait financial articles is those explaining how high-earning households are *actuall*y living basically paycheck-to-paycheck. You'll see titles like "Barely making it on $400,000" or "$500,000 doesn't go that far for this family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
 
-This claim is almost always backed up by what I would consider one of the worst financial charts on the entire internet, courtesy of "Financial Samurai":
+This claim is almost always backed up by some variant of what I would consider one of the worst financial charts on the entire internet, courtesy of "Financial Samurai":
 
 ![A chart showing a list of expenses which will be detailed later](/img/400K-budget.webp)
 
@@ -72,7 +72,7 @@ Sandy seems confused. "Why did my accountant say I had one dollar leftover, then
 
 Sandy seems even angrier. "The numbers *have* to add up to $0? I'm always going to be broke? That's not fair! I should have way more than $1 of cash flow here based on how much lemonade I'm selling."
 
-You draw her a new chart:
+You draw her a new chart that shows how to properly *account* for all the money coming and going through Sandy's operation:
 
 ||Inflow|Outflow|
 |-------|----:|---:|
@@ -129,9 +129,9 @@ The 529 plan is, of course, also just savings. The full $18,000 is accounted for
 
 To account for the principal reduction in the mortgage, which is also a form of savings, I used an average rate of 65% principal, 35% interest, which is representative of what will happen over the entire lifetime of a 30-year 3% loan. This results in booking $52,619 of savings.
 
-There's also the matter of the car payment. This is definitely a form of savings, since they're paying off a loan (presumably at a very low interest rate, since these are easy to come by for well-off buyers), but since there's no line item here for car depreciation, I think this just cancels itself out.
+There's also the matter of the car payment. This is definitely a form of savings, since they're paying off a loan. At the end of the loan, they'll still have the car, but the loan payment will stop. The car still has value, increasing their net worth. However, the car is also depreciating, so I'll err on the side of caution here and assume that the car is depreciating at the unrealistic rate of being worth $0 at the end of the loan.
 
-I also had to normalize the top half of the chart to account for some hand-wavey math around tax credits that isn't really explained. The fixed version looks like this:
+I also had to normalize the income portion of the chart to account for some hand-wavey math around tax credits that isn't really explained. The fixed version looks like this:
 
 ||Spent/(Earned)|Saved|
 |-------|------:|--------:|
@@ -175,9 +175,11 @@ Financial Samurai's hypothetical family is increasing their net worth by approxi
 
 Again, I think there are legitimate debates to be had about what the magical word "rich" means in this country, and whether Financial Samurai's hypothetical family could cut back a bit, but two things are beyond debate.
 
-First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively enviable lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing.
+First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively affluent lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing.
 
-Second: the $34 number at the bottom of the chart is *pure fiction*. It does not correspond to any actual fact about this family's finances. As much as we might laugh at Sandy's mistake of her missing dollar compared to the $40 of profit her business actually turned, the Financial Samurai distortion is worse: it understates this family's annual savings by a factor of *3,000*. It does not belong here in any form, and its inclusion as "cash flow" is a hoax.
+Second: the $34 number at the bottom of the chart is *pure fiction*. It does not correspond to any actual fact about this family's finances. You could construct this chart to make it larger, smaller, even negative if you wanted, because it's just an error.
+
+As much as we might laugh at Sandy's mistake of her missing dollar compared to the $40 of profit her business actually turned, the Financial Samurai distortion is worse: it understates this family's annual savings by a factor of *3,000*. It does not belong here in any form, and its inclusion as "cash flow" is a hoax.
 
 Sadly, many major news outlets, including those who should have the financial savvy to recognize this total bamboozle of a chart, have run with this or a similar version of it when talking about the finances of higher-earning households. We can and should do better.
 

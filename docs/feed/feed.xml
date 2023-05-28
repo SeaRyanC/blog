@@ -5,7 +5,7 @@
 	
 	<link href="https://searyanc.dev/feed/feed.xml" rel="self"/>
 	<link href="https://searyanc.dev/"/>
-	<updated>2023-05-24T00:00:00Z</updated>
+	<updated>2023-05-28T00:00:00Z</updated>
 	<id>https://searyanc.dev/</id>
 	<author>
 		<name>Ryan Cavanaugh</name>
@@ -13,7 +13,21 @@
 	</author>
 	
 	<entry>
-		<title>Launching firaga.io</title>
+		<title>scadr: renders multi-part OpenSCAD files</title>
+		<link href="https://searyanc.dev/posts/scadr/"/>
+		<updated>2023-05-28T00:00:00Z</updated>
+		<id>https://searyanc.dev/posts/scadr/</id>
+		<content type="html">&lt;p&gt;This solves a very annoying problem:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given an OpenSCAD file that produces multiple parts, how do I get an &lt;code&gt;.stl&lt;/code&gt; file for each of them?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This solution doesn&#39;t require any awkward makefiles or other scripts and can just use a module naming convention. I like it.&lt;/p&gt;
+&lt;p&gt;Now live at &lt;a href=&quot;https://github.com/SeaRyanC/scadr#readme&quot;&gt;https://github.com/SeaRyanC/scadr#readme&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>firaga.io: planner for pixel-based arts and crafts</title>
 		<link href="https://searyanc.dev/posts/firaga-io/"/>
 		<updated>2023-05-24T00:00:00Z</updated>
 		<id>https://searyanc.dev/posts/firaga-io/</id>
