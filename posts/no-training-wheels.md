@@ -10,7 +10,7 @@ eleventyExcludeFromCollections: true
 
 # "Wow! No Training Wheels!"
 
-I taught my son how to ride a bicycle right when he turned three.
+I taught my son how to ride a bicycle when he turned three.
 It quickly became his favorite thing to do, because riding a bicycle is incredibly fun for kids!
 They can finally keep up with adults, they can see more of the world, and it's just plain exciting to go a little fast.
 
@@ -25,7 +25,7 @@ It was just sad.
 He couldn't even keep up with the pair of three-year-olds ripping around the park, and even got stuck.
 How was this kid ever going to enjoy biking if this is what he thought biking was?
 
-# Skip the Training Wheels
+## Skip the Training Wheels
 
 If you learn only one thing, please let it be this:
 
@@ -38,7 +38,7 @@ If you think your kid is ready for a true two-wheeled bicycle, put them on one.
 Everything else on this page is fluff.
 Above all else, Don't Put Training Wheels a Bicycle.
 
-# Training Wheels Are Bad
+## Training Wheels Are Bad
 
 Right now, you might be saying
 
@@ -46,7 +46,7 @@ Right now, you might be saying
 
 The fact is: no one learned to read a bike on training wheels.
 
-## They Don't Teach Bicycle Skills
+### They Don't Teach Bicycle Skills
 
 
 
@@ -54,17 +54,17 @@ The fact is: no one learned to read a bike on training wheels.
 
 ## They're Not a Bicycle
 
-# Balance Bikes Are Good
+## Balance Bikes Are Good
 
 ## Gearing Up
 
-# Age Appropriateness
+## Age Appropriateness
 
-# Transitioning to Pedals
+## Transitioning to Pedals
 
-# Starting
+## Starting
 
-# Braking
+## Braking
 
 
 

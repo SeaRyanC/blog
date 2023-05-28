@@ -16,6 +16,12 @@
       "content_html": "<p>This solves a very annoying problem:</p>\n<blockquote>\n<p>Given an OpenSCAD file that produces multiple parts, how do I get an <code>.stl</code> file for each of them?</p>\n</blockquote>\n<p>This solution doesn't require any awkward makefiles or other scripts and can just use a module naming convention. I like it.</p>\n<p>Now live at <a href=\"https://github.com/SeaRyanC/scadr#readme\">https://github.com/SeaRyanC/scadr#readme</a></p>\n",
       "date_published": "2023-05-28T00:00:00Z"
     },{
+      "id": "https://searyanc.dev/posts/victory-g-code/",
+      "url": "https://searyanc.dev/posts/victory-g-code/",
+      "title": "Final Fantasy Victory G-code",
+      "content_html": "<p>Almost every 3D printer supports monophonic beeps. You can use this to have it play a little tune when your print is done. Of course, the best song you can play is the opening riff from the <a href=\"https://www.youtube.com/watch?v=PZ_7ipJ6Cx8\">Final Fantasy victory fanfare</a>.</p>\n<p>In Cura, go here:</p>\n<ul>\n<li>Preferences</li>\n<li>Printers</li>\n<li>(Your printer)</li>\n<li>Machine Settings</li>\n<li>End G-code</li>\n</ul>\n<p>and append these commands to the bottom:</p>\n<pre><code>M300 P68 S156\nM300 P63 S196\nM300 P68 S233\nM300 P68 S156\nM300 P68 S196\nM300 P68 S233\nM300 P63 S311\nM300 P68 S392\nM300 P68 S466\nM300 P68 S622\nM300 P68 S784\nM300 P63 S932\nM300 P135 S1245\nM300 P135 S1245\nM300 P130 S1245\nM300 P401 S1245\nM300 P401 S988\nM300 P401 S1109\nM300 P266 S1245\nM300 P130 S1109\nM300 P1203 S1245\n</code></pre>\n<p>I used <a href=\"https://alexyu132.github.io/midi-m300/\">this converter</a> with <a href=\"https://thefinalfantasy.net/ff1/music-midi.html\">this MIDI file</a>.</p>\n",
+      "date_published": "2023-05-28T00:00:00Z"
+    },{
       "id": "https://searyanc.dev/posts/firaga-io/",
       "url": "https://searyanc.dev/posts/firaga-io/",
       "title": "firaga.io: planner for pixel-based arts and crafts",
