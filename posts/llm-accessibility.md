@@ -1,7 +1,7 @@
 ---
-title: How I use ChatGPT as Accessibility Software
+title: How I Use ChatGPT as an Accessibility Device
 permalink: llm-accessibility/index.html
-description: It's not just for making sea shanties about register allocation
+description: It's not just for generating sea shanties about register allocation. AI has the potential to vastly improve how we interact with our computing devices.
 date: 2023-05-28
 tags:
  - ai
@@ -11,10 +11,11 @@ layout: layouts/post.njk
 
 In April 2023 I crashed my bicycle and broke both my wrists.
 As you can imagine, this put quite the damper on my ability to type.
-Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job
+Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job.
 
-The built-in speech-to-text functionality in Windows 11 is *quite* good in terms of everyday transcription.
-It's as good as the one built into my Android phone, to be sure, and for a lot of content like the performance reviews I was writing at the time, this was good enough as-is with some light copy editing.
+I started  off using the built-in speech-to-text functionality in Windows 11.
+It's *quite* good in terms of everyday transcription; as good as the one built into my Android phone, to be sure.
+For a lot of content like the performance reviews I was writing at the time, this was good enough as-is with some light copy editing.
 
 However, for technical content, this left a lot to be desired.
 A lot of clarity is gained with simple formatting, like putting programming terms in `fixed-width` font.
@@ -40,6 +41,7 @@ I fired up ChatGPT and gave it the scenario. After repeated tweaking, I came up 
 > Add commas liberally if it makes the text flow better, as these are unlikely to be specified in the transcription. Be sure to correct other mistakes like your/you're errors. The message follows below the line. Reply only with the corrected message.
 
 The results of this are *incredibly* good.
+Even better, the fact that I can continually refine the prompt to make the corrected version more closely match what I would have typed is very powerful.
 
 Here's an example input produced from dictation. Errors or subpar results are __annotated__
 
@@ -49,6 +51,8 @@ ChatGPT transformed this to exactly what I wanted:
 
 > This doesn't seem like a great trade-off in general. Downcasting to `string` or `number` is useful because those types are known to have particular characteristics, but downcasting to `object` just leaves you worse off than you were before in the vast majority of cases without providing any additional type safety.
 
+This regularly makes all kinds of excellent corrections that are entirely domain-specific, such as fixing "bear identifier" to "bare identifier".
+
 I wrote a C# program to grab the active text from the current textbox using the Windows Accessibility API, pass the prewritten prompt + that text into the `gpt-3.5-turbo` API, and push the result back into the textbox.
 Then I wired up that invocation to a button on my Stream Deck
 
@@ -56,3 +60,5 @@ Then I wired up that invocation to a button on my Stream Deck
 
 The cost to do this is effectively free.
 At a cost of $0.002 / 1,000 tokens, and a typical cost to reformat one comment of about 200 tokens, $1 can copy-edit 2,500 comments.
+
+I'm incredibly excited about the future of AI as something that can improve accessibility more generally, but even now that I can type again, I expect to use this workflow more regularly because it's just *faster*.
