@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Cavanaugh</title>
-    <meta name="description" content="Ryan Cavanaugh&#39;s blog">
+    <title>How I use ChatGPT as Accessibility Software</title>
+    <meta name="description" content="It&#39;s not just for making sea shanties about register allocation">
     
     <style>:root{--lightgray:#e0e0e0;--gray:#C0C0C0;--darkgray:#333;--navy:#17050F;--blue:#082840;--white:#fff}*{box-sizing:border-box}body,html{padding:0;margin:0;font-family:-apple-system,system-ui,sans-serif;color:var(--darkgray);background-color:var(--white)}p:last-child{margin-bottom:0}.tmpl-post li,img,p{max-width:55em}.tmpl-post li,p{line-height:1.45}a[href]{color:var(--blue)}a[href]:visited{color:var(--navy)}main{padding:1rem;margin-left:auto;margin-right:auto;max-width:60em;text-align:justify}main :first-child{margin-top:0}header{border-bottom:1px dashed var(--lightgray)}header:after{content:"";display:table;clear:both}table{margin:1em 0}table td,table th{padding-right:1em}main blockquote{max-width:80%;background:#e0e0e0;border-radius:1em;padding:1em}code,pre{font-family:Consolas,Menlo,Monaco,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L","Courier New",Courier,monospace;line-height:1.5}pre{background:#e2e2e4;padding:1em;border-radius:.75em;display:block;width:max-content;min-width:50%;font-size:14px;line-height:1.375;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;-moz-tab-size:2;-o-tab-size:2;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code{word-break:break-all}.highlight-line{display:block;padding:.125em 1em;text-decoration:none;color:inherit}.highlight-line:empty:before{content:" "}.highlight-line+br{display:none}.highlight-line-isdir{color:#b0b0b0;background-color:#222}.highlight-line-active{background-color:#444;background-color:hsla(0,0%,27%,.8)}.highlight-line-add{background-color:#45844b}.highlight-line-remove{background-color:#902f2f}.home{padding:0 1rem;float:left;margin:1rem 0;font-size:1em}.home :link:not(:hover){text-decoration:none}.nav{padding:0;list-style:none;float:left;margin-left:1em}.nav-item{display:inline-block;margin-right:1em}.nav-item a[href]:not(:hover){text-decoration:none}.nav-item-active{font-weight:700;text-decoration:underline}.postlist{list-style:none}.postlist-item{margin:1em;padding:1em;align-items:baseline;line-height:1.8;border:solid 1px #ccc}.postlist-date,.postlist-item:before{font-size:.8125em;color:var(--darkgray)}.postlist-date{word-spacing:-0.5px}.postlist-description{margin:1em}.postlist-link{padding-left:.25em;padding-right:.25em;text-underline-position:from-font;text-underline-offset:0;text-decoration-thickness:1px}.postlist-item-active .postlist-link{font-weight:700}.tmpl-home .postlist-link{font-size:1.1875em;font-weight:700}.post-tag{display:inline-flex;align-items:center;justify-content:center;text-transform:uppercase;font-size:.75em;padding:.08333333333333em .3333333333333em;margin-left:.6666666666667em;margin-top:.5em;margin-bottom:.5em;color:var(--darkgray);border:1px solid var(--gray);border-radius:.25em;text-decoration:none;line-height:1.8}a[href].post-tag,a[href].post-tag:visited{color:inherit}a[href].post-tag:focus,a[href].post-tag:hover{background-color:var(--lightgray)}.postlist-item>.post-tag{align-self:center}.warning{background-color:#ffc;padding:1em .625em}.warning ol:only-child{margin:0}.direct-link{font-family:sans-serif;text-decoration:none;font-style:normal;margin-left:.1em}a[href].direct-link,a[href].direct-link:visited{color:transparent}:hover>a[href].direct-link,:hover>a[href].direct-link:visited,a[href].direct-link:focus,a[href].direct-link:focus:visited{color:#aaa}</style>
     
@@ -16,92 +16,58 @@
     <header>
       <h1 class="home"><a href="/">Ryan Cavanaugh</a></h1>
       <ul class="nav">
-        <li class="nav-item nav-item-active"><a href="/">Home</a></li>
+        <li class="nav-item"><a href="/">Home</a></li>
         <li class="nav-item"><a href="/about/">About</a></li>
       </ul>
     </header>
 
-    <main class="tmpl-home">
-      
+    <main class="tmpl-post">
+      <h1>How I use ChatGPT as Accessibility Software</h1><a href="/tags/ai/" class="post-tag">ai</a><a href="/tags/accessibility/" class="post-tag">accessibility</a>
 
+<p>In April 2023 I crashed my bicycle and broke both my wrists.
+As you can imagine, this put quite the damper on my ability to type.
+Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job</p>
+<p>The built-in speech-to-text functionality in Windows 11 is <em>quite</em> good in terms of everyday transcription.
+It's as good as the one built into my Android phone, to be sure, and for a lot of content like the performance reviews I was writing at the time, this was good enough as-is with some light copy editing.</p>
+<p>However, for technical content, this left a lot to be desired.
+A lot of clarity is gained with simple formatting, like putting programming terms in <code>fixed-width</code> font.
+For talking about TypeScript in particular, there are a lot of things that are homophonic with other more common terms, such as <code>variants</code> vs <code>variance</code>.</p>
+<p>I also didn't like how the default speech-to-text dealt with punctuation.
+I write a <em>lot</em> of text every day, and my writing style is something that I feel is part of my identity.
+Seeing comments with my name attached to them, not written in my writing style, was surprisingly upsetting.
+It felt like a doppleganger wrote my content.</p>
+<p>What I needed was for someone, or some thing, with the extra context of <em>what I was doing</em> to in order to reformat and copyedit my text exactly to my liking.</p>
+<p>I fired up ChatGPT and gave it the scenario. After repeated tweaking, I came up with this:</p>
+<blockquote>
+<p>Scenario: I am a maintainer on the TypeScript GitHub repo.</p>
+<p>I have dictated a message so its punctuation, formatting, and use of homophones may be off. Please correct the text for typographical errors and apply markdown formatting to relevant terms, such as names of variables, methods functions, or types.</p>
+<p>Do not add any extra content, preamble, or sign off, but do make corrections in cases where there is a homophone of a more common programming term in use, such as &quot;to Jason&quot; meaning &quot;toJSON&quot; in the context of JavaScript programming, or TypeScript related terms.</p>
+<p>Also apply in-situ corrections such as &quot;capital t type&quot; to &quot;Type&quot;. Always replace &quot;comma&quot; with a comma character, &quot;colon&quot; with an actual colon, &quot;dash&quot; with an actual dash, and so on.</p>
+<p>Add commas liberally if it makes the text flow better, as these are unlikely to be specified in the transcription. Be sure to correct other mistakes like your/you're errors. The message follows below the line. Reply only with the corrected message.</p>
+</blockquote>
+<p>The results of this are <em>incredibly</em> good.</p>
+<p>Here's an example input produced from dictation. Errors or subpar results are <strong>annotated</strong></p>
+<blockquote>
+<p>This doesn't seem like a great <strong>trade off</strong> in general. <strong>downcasting</strong> to <strong>stringer number</strong> is useful because those types are known to have particular characteristics, but downcasting to <strong>object</strong> just leaves you worse off.</p>
+</blockquote>
+<p>ChatGPT transformed this to exactly what I wanted:</p>
+<blockquote>
+<p>This doesn't seem like a great trade-off in general. Downcasting to <code>string</code> or <code>number</code> is useful because those types are known to have particular characteristics, but downcasting to <code>object</code> just leaves you worse off than you were before in the vast majority of cases without providing any additional type safety.</p>
+</blockquote>
+<p>I wrote a C# program to grab the active text from the current textbox using the Windows Accessibility API, pass the prewritten prompt + that text into the <code>gpt-3.5-turbo</code> API, and push the result back into the textbox.
+Then I wired up that invocation to a button on my Stream Deck</p>
+<p><img src="/img/stream-deck-gpt.jpg" alt="&quot;copyedit&quot; caption on a Stream Deck button with a debugger icon"></p>
+<p>The cost to do this is effectively free.
+At a cost of $0.002 / 1,000 tokens, and a typical cost to reformat one comment of about 200 tokens, $1 can copy-edit 2,500 comments.</p>
 
-
-<div class="postlist-item">
-  <div class="postlist-header">
-    <a href="/llm-accessibility/" class="postlist-link">How I use ChatGPT as Accessibility Software</a>
-    <time class="postlist-date" datetime="2023-05-28">28 May 2023</time>
-  </div>
-  <div class="postlist-description"><p>It's not just for making sea shanties about register allocation</p>
-</div>
-  <div>
-    
-      
-      <a href="/tags/ai/" class="post-tag">ai</a>
-    
-      
-      <a href="/tags/accessibility/" class="post-tag">accessibility</a>
-    
-  </div>
-</div>
-
-<div class="postlist-item">
-  <div class="postlist-header">
-    <a href="/posts/scadr/" class="postlist-link">scadr: renders multi-part OpenSCAD files</a>
-    <time class="postlist-date" datetime="2023-05-27">27 May 2023</time>
-  </div>
-  <div class="postlist-description"><p>Makefiles are so 1987. Use <code>scadr</code> to make .stl files without the mess.</p>
-</div>
-  <div>
-    
-      
-      <a href="/tags/3d/" class="post-tag">3d</a>
-    
-      
-      <a href="/tags/typescript/" class="post-tag">typescript</a>
-    
-      
-      <a href="/tags/openscad/" class="post-tag">openscad</a>
-    
-  </div>
-</div>
-
-<div class="postlist-item">
-  <div class="postlist-header">
-    <a href="/victory-g-code/" class="postlist-link">Final Fantasy Victory G-code</a>
-    <time class="postlist-date" datetime="2023-05-27">27 May 2023</time>
-  </div>
-  <div class="postlist-description"><p>Celebrate your 3D prints properly</p>
-</div>
-  <div>
-    
-      
-      <a href="/tags/3d/" class="post-tag">3d</a>
-    
-  </div>
-</div>
-
-<div class="postlist-item">
-  <div class="postlist-header">
-    <a href="/firaga-io/" class="postlist-link">firaga.io: planner for pixel-based arts and crafts</a>
-    <time class="postlist-date" datetime="2023-05-22">22 May 2023</time>
-  </div>
-  <div class="postlist-description"><p>firaga.io is now live!</p>
-</div>
-  <div>
-    
-      
-      <a href="/tags/pixels/" class="post-tag">pixels</a>
-    
-  </div>
-</div>
-
-
-
+<hr>
+<ul><li>Previous: <a href="/posts/scadr/">scadr: renders multi-part OpenSCAD files</a></li>
+</ul>
 
     </main>
 
     <footer></footer>
 
-    <!-- Current page: / -->
+    <!-- Current page: /llm-accessibility/ -->
   </body>
 </html>

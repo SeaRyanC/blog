@@ -1,9 +1,10 @@
 ---
 title: 
-permalink: posts/TODO/index.html
+permalink: TODO/index.html
 description: 
 date: 
-tags: 
+tags:
+ - some tag
 layout: layouts/post.njk
 
 draft: true

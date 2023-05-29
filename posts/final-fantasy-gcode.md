@@ -1,8 +1,8 @@
 ---
 title: Final Fantasy Victory G-code
-permalink: posts/victory-g-code/index.html
+permalink: victory-g-code/index.html
 description: Celebrate your 3D prints properly
-date: 2023-05-28
+date: 2023-05-27
 tags: 3d
 layout: layouts/post.njk
 ---
@@ -40,6 +40,7 @@ M300 P401 S1109
 M300 P266 S1245
 M300 P130 S1109
 M300 P1203 S1245
+G04 10
 ```
 
-I used [this converter](https://alexyu132.github.io/midi-m300/) with [this MIDI file](https://thefinalfantasy.net/ff1/music-midi.html).
+I used [this converter](https://alexyu132.github.io/midi-m300/) with [this MIDI file](https://thefinalfantasy.net/ff1/music-midi.html). The `G04 10` (10ms delay) at the end prevents the speaker from glitching out during the last held note.

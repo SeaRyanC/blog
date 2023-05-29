@@ -1,6 +1,7 @@
 ---
 layout: layouts/post.njk
 title: About
+date: null
 templateClass: tmpl-post
 eleventyNavigation:
   key: About

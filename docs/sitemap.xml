@@ -2,17 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://searyanc.dev/posts/firaga-io/</loc>
-    <lastmod>2023-05-24</lastmod>
+    <loc>https://searyanc.dev/firaga-io/</loc>
+    <lastmod>2023-05-22</lastmod>
   </url>
   
   <url>
     <loc>https://searyanc.dev/about/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/posts/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
@@ -42,6 +37,16 @@
   </url>
   
   <url>
+    <loc>https://searyanc.dev/tags/ai/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/tags/accessibility/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://searyanc.dev/tags/typescript/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
@@ -52,12 +57,17 @@
   </url>
   
   <url>
-    <loc>https://searyanc.dev/posts/victory-g-code/</loc>
-    <lastmod>2023-05-28</lastmod>
+    <loc>https://searyanc.dev/victory-g-code/</loc>
+    <lastmod>2023-05-27</lastmod>
   </url>
   
   <url>
     <loc>https://searyanc.dev/posts/scadr/</loc>
+    <lastmod>2023-05-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/llm-accessibility/</loc>
     <lastmod>2023-05-28</lastmod>
   </url>
 </urlset>

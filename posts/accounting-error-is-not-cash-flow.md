@@ -1,6 +1,6 @@
 ---
 title: Accounting Error is not Cash Flow
-permalink: posts/accounting-error-is-not-cash-flow/index.html
+permalink: accounting-error-is-not-cash-flow/index.html
 description: Articles describing how little money is left after a family "spends" it are frequently misleading
 date: 2021-01-27
 tags:
