@@ -5,4 +5,4 @@ const docs = path.join(__dirname, "docs");
 
 rimraf.rimrafSync(docs);
 fs.mkdirSync(docs);
-fs.writeFileSync(path.join(docs, "CNAME"), "");
+fs.writeFileSync(path.join(docs, "CNAME"), "searyanc.dev");
