@@ -27,22 +27,12 @@
   </url>
   
   <url>
-    <loc>https://searyanc.dev/tags/3d/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
     <loc>https://searyanc.dev/tags/pixels/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
   <url>
-    <loc>https://searyanc.dev/tags/ai/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/tags/accessibility/</loc>
+    <loc>https://searyanc.dev/tags/3d/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
@@ -64,10 +54,5 @@
   <url>
     <loc>https://searyanc.dev/posts/scadr/</loc>
     <lastmod>2023-05-27</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/llm-accessibility/</loc>
-    <lastmod>2023-05-28</lastmod>
   </url>
 </urlset>

@@ -5,59 +5,12 @@
 	
 	<link href="https://searyanc.dev/feed/feed.xml" rel="self"/>
 	<link href="https://searyanc.dev/"/>
-	<updated>2023-05-28T00:00:00Z</updated>
+	<updated>2023-05-27T00:00:00Z</updated>
 	<id>https://searyanc.dev/</id>
 	<author>
 		<name>Ryan Cavanaugh</name>
 		<email></email>
 	</author>
-	
-	<entry>
-		<title>How I Use ChatGPT as an Accessibility Device</title>
-		<link href="https://searyanc.dev/llm-accessibility/"/>
-		<updated>2023-05-28T00:00:00Z</updated>
-		<id>https://searyanc.dev/llm-accessibility/</id>
-		<content type="html">&lt;p&gt;In April 2023 I crashed my bicycle and broke both my wrists.
-As you can imagine, this put quite the damper on my ability to type.
-Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job.&lt;/p&gt;
-&lt;p&gt;I started  off using the built-in speech-to-text functionality in Windows 11.
-It&#39;s &lt;em&gt;quite&lt;/em&gt; good in terms of everyday transcription; as good as the one built into my Android phone, to be sure.
-For a lot of content like the performance reviews I was writing at the time, this was good enough as-is with some light copy editing.&lt;/p&gt;
-&lt;p&gt;However, for technical content, this left a lot to be desired.
-A lot of clarity is gained with simple formatting, like putting programming terms in &lt;code&gt;fixed-width&lt;/code&gt; font.
-For talking about TypeScript in particular, there are a lot of things that are homophonic with other more common terms, such as &lt;code&gt;variants&lt;/code&gt; vs &lt;code&gt;variance&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;I also didn&#39;t like how the default speech-to-text dealt with punctuation.
-I write a &lt;em&gt;lot&lt;/em&gt; of text every day, and my writing style is something that I feel is part of my identity.
-Seeing comments with my name attached to them, not written in my writing style, was surprisingly upsetting.
-It felt like a doppleganger wrote my content.&lt;/p&gt;
-&lt;p&gt;What I needed was for someone, or some thing, with the extra context of &lt;em&gt;what I was doing&lt;/em&gt; to in order to reformat and copyedit my text exactly to my liking.&lt;/p&gt;
-&lt;p&gt;I fired up ChatGPT and gave it the scenario. After repeated tweaking, I came up with this:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Scenario: I am a maintainer on the TypeScript GitHub repo.&lt;/p&gt;
-&lt;p&gt;I have dictated a message so its punctuation, formatting, and use of homophones may be off. Please correct the text for typographical errors and apply markdown formatting to relevant terms, such as names of variables, methods functions, or types.&lt;/p&gt;
-&lt;p&gt;Do not add any extra content, preamble, or sign off, but do make corrections in cases where there is a homophone of a more common programming term in use, such as &amp;quot;to Jason&amp;quot; meaning &amp;quot;toJSON&amp;quot; in the context of JavaScript programming, or TypeScript related terms.&lt;/p&gt;
-&lt;p&gt;Also apply in-situ corrections such as &amp;quot;capital t type&amp;quot; to &amp;quot;Type&amp;quot;. Always replace &amp;quot;comma&amp;quot; with a comma character, &amp;quot;colon&amp;quot; with an actual colon, &amp;quot;dash&amp;quot; with an actual dash, and so on.&lt;/p&gt;
-&lt;p&gt;Add commas liberally if it makes the text flow better, as these are unlikely to be specified in the transcription. Be sure to correct other mistakes like your/you&#39;re errors. The message follows below the line. Reply only with the corrected message.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The results of this are &lt;em&gt;incredibly&lt;/em&gt; good.
-Even better, the fact that I can continually refine the prompt to make the corrected version more closely match what I would have typed is very powerful.&lt;/p&gt;
-&lt;p&gt;Here&#39;s an example input produced from dictation. Errors or subpar results are &lt;strong&gt;annotated&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This doesn&#39;t seem like a great &lt;strong&gt;trade off&lt;/strong&gt; in general. &lt;strong&gt;downcasting&lt;/strong&gt; to &lt;strong&gt;stringer number&lt;/strong&gt; is useful because those types are known to have particular characteristics, but downcasting to &lt;strong&gt;object&lt;/strong&gt; just leaves you worse off.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;ChatGPT transformed this to exactly what I wanted:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;This doesn&#39;t seem like a great trade-off in general. Downcasting to &lt;code&gt;string&lt;/code&gt; or &lt;code&gt;number&lt;/code&gt; is useful because those types are known to have particular characteristics, but downcasting to &lt;code&gt;object&lt;/code&gt; just leaves you worse off than you were before in the vast majority of cases without providing any additional type safety.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;This regularly makes all kinds of excellent corrections that are entirely domain-specific, such as fixing &amp;quot;bear identifier&amp;quot; to &amp;quot;bare identifier&amp;quot;.&lt;/p&gt;
-&lt;p&gt;I wrote a C# program to grab the active text from the current textbox using the Windows Accessibility API, pass the prewritten prompt + that text into the &lt;code&gt;gpt-3.5-turbo&lt;/code&gt; API, and push the result back into the textbox.
-Then I wired up that invocation to a button on my Stream Deck&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://searyanc.dev/img/stream-deck-gpt.jpg&quot; alt=&quot;&amp;quot;copyedit&amp;quot; caption on a Stream Deck button with a debugger icon&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;The cost to do this is effectively free.
-At a cost of $0.002 / 1,000 tokens, and a typical cost to reformat one comment of about 200 tokens, $1 can copy-edit 2,500 comments.&lt;/p&gt;
-&lt;p&gt;I&#39;m incredibly excited about the future of AI as something that can improve accessibility more generally, but even now that I can type again, I expect to use this workflow more regularly because it&#39;s just &lt;em&gt;faster&lt;/em&gt;.&lt;/p&gt;
-</content>
-	</entry>
 	
 	<entry>
 		<title>scadr: renders multi-part OpenSCAD files</title>

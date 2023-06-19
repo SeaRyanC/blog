@@ -7,6 +7,7 @@ tags:
  - ai
  - accessibility
 layout: layouts/post.njk
+eleventyExcludeFromCollections: true
 ---
 
 In April 2023 I crashed my bicycle and broke both my wrists.
