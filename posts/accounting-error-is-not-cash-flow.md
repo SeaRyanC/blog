@@ -2,14 +2,14 @@
 title: Accounting Error is not Cash Flow
 permalink: accounting-error-is-not-cash-flow/index.html
 description: Articles describing how little money is left after a family "spends" it are frequently misleading
-date: 2021-01-27
+date: 2024-01-27
 tags:
  - random
 layout: layouts/post.njk
 eleventyExcludeFromCollections: true
 ---
 
-A popular form of clickbait financial articles is those explaining how high-earning households are *actuall*y living basically paycheck-to-paycheck. You'll see titles like "Barely making it on $400,000" or "$500,000 doesn't go that far for this family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
+A popular form of clickbait financial articles is those explaining how high-earning households are *actually* living basically "paycheck-to-paycheck". You'll see titles like "Barely making it on $400,000" or "$500,000 doesn't go that far for this family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
 
 This claim is almost always backed up by some variant of what I would consider one of the worst financial charts on the entire internet, courtesy of "Financial Samurai":
 
@@ -17,7 +17,7 @@ This claim is almost always backed up by some variant of what I would consider o
 
 The chart here claims to compute an *annual* "cash flow" of $34, or $3 per month.
 
-$3. Not even enough to buy a latte. You would think, from reading this chart, that even an extremely modest tax raise would send this family into ruin. They're basically living paycheck-to-paycheck, after all, with only $3 left to their names at the end of the month.
+$3. Not even enough to buy a latte. This family is teetering on the brink of financial collapse. They're basically living paycheck-to-paycheck, after all, with only $3 left to their names at the end of the month.
 
 Commentors on the internet often dissect this chart line-by-line, pointing out that the family could spend less on vacations, or move to a smaller home, or eat more cheaply, or attend public schools, or are at a lifetime highpoint of mandatory expenditures due to having two small children. These comments are not wrong, but they're missing the point.
 
@@ -29,13 +29,13 @@ Let's talk about why, and how to fix it. But first, a story.
 
 # Accounting Error vs Cash Flow: A Lemonade Stand Fable
 
-Your niece, Sandy, has set up a lemonade stand. It seems to be doing great. At the end of the week, you ask how business is going.
+Your nephew, Tommy, has set up a lemonade stand. It seems to be doing great. At the end of the week, you ask how business is going.
 
-"I'm barely surviving!" she says.
+"I'm barely surviving!" he says.
 
 "How so? I saw a long line around the block when I stopped by" you reply.
 
-Sandy, furious, pulls a single dollar bill out of her pocket. She begins her rant:
+Tommy, furious, pulls a single dollar bill out of his pocket. He begins his rant:
 
 > I talked to my accountant and here's where I stand. I sold 100 cups of lemonade for $1 each, so have $100 in income.
 
@@ -45,11 +45,11 @@ Sandy, furious, pulls a single dollar bill out of her pocket. She begins her ran
 
 > At the end of the week, I only have $1 of cash flow after expenses to pay for miscellaneous! One miserable buck!
 
-She complains as she waves the dollar around in her hand. "A single dollar more in taxes and I'm in the red!"
+He complains as he waves the dollar around in his hand. "A single dollar more in taxes and I'm in the red!"
 
-Her accountant made a chart detailing how dire the scenario is:
+His accountant made a chart detailing how dire the scenario is:
 
-|Sandy's P&L|Gains/Loss|
+|Tommy's P&L|Gains/Loss|
 |-------|----:|
 |Sales|$100|
 |**Total Income**|$100|
@@ -64,15 +64,15 @@ Her accountant made a chart detailing how dire the scenario is:
 |**Total Expenses**|(39)|
 |*Remaining Cash Flow*|$1|
 
-"Hold on, Sandy." you say. "Your revenue was $100 on a cost of $50, for a profit of $50. You lost $10 to taxes, leading to $40 in net profit. You spent $10 of that at the arcade, and *saved* the other $30: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you're holding right now. All your money is accounted for and you're doing very well. Great job!".
+"Hold on, Tommy." you say. "Your revenue was $100 on a cost of $50, for a profit of $50. You lost $10 to taxes, leading to $40 in net profit. You spent $10 of that at the arcade, and *saved* the other $30: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you're holding right now. All your money is accounted for and you're doing very well. Great job!".
 
-Sandy seems confused. "Why did my accountant say I had one dollar leftover, then? I feel like I'm barely scraping by here."
+Tommy seems confused. "Why did my accountant say I had one dollar leftover, then? I feel like I'm barely scraping by here."
 
 "Your accountant didn't see that dollar bill in your pocket, so he couldn't make the numbers add up to $0 like they should have. He was talking about *accounting error*. That's what it means to have money left over at the end of the accounting process."
 
-Sandy seems even angrier. "The numbers *have* to add up to $0? I'm always going to be broke? That's not fair! I should have way more than $1 of cash flow here based on how much lemonade I'm selling."
+Tommy seems even angrier. "The numbers *have* to add up to $0? I'm always going to be broke? That's not fair! I should have way more than $1 of cash flow here based on how much lemonade I'm selling."
 
-You draw her a new chart that shows how to properly *account* for all the money coming and going through Sandy's operation:
+You draw a new chart that shows how to properly *account* for all the money coming and going through Tommy's operation:
 
 ||Inflow|Outflow|
 |-------|----:|---:|
@@ -93,7 +93,7 @@ You draw her a new chart that shows how to properly *account* for all the money 
 
 "Your cash flow is $40, because that's how much money you had after subtracting your expenses from your income. The $1 was the accounting error, not the cash flow. You need to find an accountant who knows what they're talking about. And if your taxes go up by $5, you can choose to spend less at the arcade, or you can save less. It's up to you, but your business will still be turning a tidy profit. I wouldn't worry about it."
 
-"Wow", says Sandy, "I guess that's what I get for hiring a cut-rate accountant. Thanks for clearing it up for me. It's sure good to know my business is doing 40 times better than I thought!"
+"Wow", says Tommy, "I guess that's what I get for hiring a cut-rate accountant. Thanks for clearing it up for me. It's sure good to know my business is doing 40 times better than I thought!"
 
 ## Discussion
 
@@ -103,7 +103,7 @@ Without going deep on accounting to discuss things like depreciation, appreciati
 
 Every dollar you earn is either *spent* (which includes mandatory expenditures like taxes) or *saved*.
 
-What Sandy (and the Financial Samurai) attempted to do was rewrite the equation:
+What Tommy (and the Financial Samurai) attempted to do was rewrite the equation:
 
 > `income - expenses - savings = "cash flow"`
 
@@ -127,7 +127,7 @@ For the 401(k), this is unambiguously savings, albeit pre-tax dollars that will 
 
 The 529 plan is, of course, also just savings. The full $18,000 is accounted for as savings.
 
-To account for the principal reduction in the mortgage, which is also a form of savings, I used an average rate of 65% principal, 35% interest, which is representative of what will happen over the entire lifetime of a 30-year 3% loan. This results in booking $52,619 of savings.
+To account for the principal reduction in the mortgage, which is also a form of savings, I used an average rate of 65% principal, 35% interest, which is representative of what will happen over the entire lifetime of a 30-year loan. This results in booking $52,619 of savings.
 
 There's also the matter of the car payment. This is definitely a form of savings, since they're paying off a loan. At the end of the loan, they'll still have the car, but the loan payment will stop. The car still has value, increasing their net worth. However, the car is also depreciating, so I'll err on the side of caution here and assume that the car is depreciating at the unrealistic rate of being worth $0 at the end of the loan.
 
@@ -167,7 +167,7 @@ I also had to normalize the income portion of the chart to account for some hand
 
 As we can see, the family is *saving* $104,493 per year.
 
-Adding the "cash in your pocket" line item, in honor of Sandy, we get an annual savings of $104,493, and an accounting error of $0.
+Adding the "cash in your pocket" line item, in honor of Tommy, we get an annual savings of $104,493, and an accounting error of $0.
 
 ## Discussion
 
@@ -179,14 +179,30 @@ First: this family is saving money at a rate that is impossible for the median h
 
 Second: the $34 number at the bottom of the chart is *pure fiction*. It does not correspond to any actual fact about this family's finances. You could construct this chart to make it larger, smaller, even negative if you wanted, because it's just an error.
 
-As much as we might laugh at Sandy's mistake of her missing dollar compared to the $40 of profit her business actually turned, the Financial Samurai distortion is worse: it understates this family's annual savings by a factor of *3,000*. It does not belong here in any form, and its inclusion as "cash flow" is a hoax.
+As much as we might laugh at Tommy's mistake of his missing dollar compared to the $40 of profit his business actually turned, the Financial Samurai distortion is worse: it understates this family's annual savings by a factor of *3,000*. It does not belong here in any form, and its inclusion as "cash flow" is a hoax.
 
 Sadly, many major news outlets, including those who should have the financial savvy to recognize this total bamboozle of a chart, have run with this or a similar version of it when talking about the finances of higher-earning households. We can and should do better.
 
-# Objections
+## Objections
 
 ### Saving for Future Expenses is an Expense
 
 You might point to the line item for 529 and say, since this money will eventually be spent on college tuition, it isn't really savings at all, but rather an expenditure that we're booking now instead of later. The same for 401(k) contributions -- these dollars will likely be spent in retirement, thus are future expenditures.
 
-Much like the original chart misappropriates what "cash flow" is, this objection misappropriates what "savings" means. The final fate of every saved dollar is either to be spent on something, or passed on to your heirs when you die. We could certainly categorize the family's savings into earmarked savings and nonearmarked savings. Under this metric, the house payment becomes $52,000 of eventually-inherited wealth, and the remainder is earmarked savings that will be spent down in retirement. With 20 years of such savings, they'll be passing down an estate worth over *a million dollars* to their heirs. The median inheritance in the United States is $69,000, or less than a year and a half of non-earmarked savings for our "cash-strapped" family. Not too shabby.
+Much like the original chart misappropriates what "cash flow" is, this objection misappropriates what "savings" means. The final fate of every saved dollar is either to be spent on something, or passed on to your heirs when you die, who will then have to either spend that dollar or pass it on to *their* heirs, and so on. Every dollar is eventually spent.
+
+Under the "every dollar saved is eventually spent, thus is not saved" definition, no money is *ever* saved. We would have to rewrite the equation as
+
+> `income - expenses - money eventually spent by you or your heirs = $0`
+
+But it's just shorter to refer to "money eventually spent by you or your heirs" as savings.
+
+### Saving for College is Different Though
+
+Maybe there's some sense in which saving for college is different, because it does feel like a sort of mandatory future expenditure.
+
+Under this family's given budget, doing so would be unambiguously double-dipping: They're currently spending $63,000/year on daycare and private school, which is enough to cover in-state tuition at a reputable school for two students (in-state expenses at time of writing for University of Washington is $34,000 per off-campus student).
+
+To put it another way, this is like having $1,000/month rent, and claiming that you have $2,000/month in housing expenses: $1,000 for this month's rent, and $1,000 for the following month's rent. Next month is next month, you either book that expense now (in which case you can't claim this month's budget is typical), or later.
+
+We could certainly categorize the family's savings into earmarked savings and non-earmarked savings. Under this metric, the house payment becomes $52,000 of eventually-inherited wealth, and the remainder is earmarked savings that will be spent down in retirement. With 20 years of such savings, they'll be passing down an estate worth over *a million dollars* to their heirs. The median inheritance in the United States is $69,000, or less than a year and a half of non-earmarked savings for our "cash-strapped" family. Not too shabby.
