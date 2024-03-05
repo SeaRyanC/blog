@@ -27,7 +27,7 @@ What this chart is demonstrating is *accounting error*: The person making the ch
 
 Let's talk about why, and how to fix it. But first, a story.
 
-# Accounting Error vs Cash Flow: A Lemonade Stand Fable
+## Tommy's Lemonade Stand
 
 Your nephew, Tommy, has set up a lemonade stand. It seems to be doing great. At the end of the week, you ask how business is going.
 
@@ -44,6 +44,8 @@ Tommy, furious, pulls a single dollar bill out of his pocket. He begins his rant
 > I put $20 into my piggy bank, spent $10 at the arcade, stuffed $5 under my mattress, and deposited $4 into my savings account.
 
 > At the end of the week, I only have $1 of cash flow after expenses to pay for miscellaneous! One miserable buck!
+
+![A sad boy with a single dollar bill](/img/lemonade.webp)
 
 He complains as he waves the dollar around in his hand. "A single dollar more in taxes and I'm in the red!"
 
@@ -117,7 +119,7 @@ If you don't get $0 when computing income minus expenses and savings, you have *
 
 What we see in "Surviving off $400,000" is a monthly *accounting error* of $3. $3 of accounting error on a gross income of $33,333 is actually great in terms of accuracy; it means whoever prepared this chart painstakingly accounting for the family's savings and expenses, but missed by 0.01%. Perhaps they mistyped the mortgage as $6,746 when it was actually $6,749, for example. Or maybe they engineered the chart to show a tiny accounting error, misleadingly labelled it "Cash Flow", and used this numerical sleight of hand to push a preconceived ideological narrative. We'll never know.
 
-# Financial Samurai's Family
+## Financial Samurai's Family
 
 Let's fix Financial Samurai's chart.
 
@@ -197,12 +199,12 @@ Under the "every dollar saved is eventually spent, thus is not saved" definition
 
 But it's just shorter to refer to "money eventually spent by you or your heirs" as savings.
 
-### Saving for College is Different Though
+### Saving for College is Different
 
 Maybe there's some sense in which saving for college is different, because it does feel like a sort of mandatory future expenditure.
 
 Under this family's given budget, doing so would be unambiguously double-dipping: They're currently spending $63,000/year on daycare and private school, which is enough to cover in-state tuition at a reputable school for two students (in-state expenses at time of writing for University of Washington is $34,000 per off-campus student).
 
-To put it another way, this is like having $1,000/month rent, and claiming that you have $2,000/month in housing expenses: $1,000 for this month's rent, and $1,000 for the following month's rent. Next month is next month, you either book that expense now (in which case you can't claim this month's budget is typical), or later.
+To put it another way, let's say you spent $20 eating out today, and $20 at the grocery store buying food for tomorrow. Even though the amount of money you spent on food today was $40, it's not accurate to say your *daily food budget* is $40. It's $20 today, and $20 tomorrow.
 
 We could certainly categorize the family's savings into earmarked savings and non-earmarked savings. Under this metric, the house payment becomes $52,000 of eventually-inherited wealth, and the remainder is earmarked savings that will be spent down in retirement. With 20 years of such savings, they'll be passing down an estate worth over *a million dollars* to their heirs. The median inheritance in the United States is $69,000, or less than a year and a half of non-earmarked savings for our "cash-strapped" family. Not too shabby.
