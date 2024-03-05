@@ -193,11 +193,13 @@ You might point to the line item for 529 and say, since this money will eventual
 
 Much like the original chart misappropriates what "cash flow" is, this objection misappropriates what "savings" means. The final fate of every saved dollar is either to be spent on something, or passed on to your heirs when you die, who will then have to either spend that dollar or pass it on to *their* heirs, and so on. Every dollar is eventually spent.
 
-Under the "every dollar saved is eventually spent, thus is not saved" definition, no money is *ever* saved. We would have to rewrite the equation as
+Under the "every dollar saved is eventually spent, thus is not saved" definition, no money is *ever* saved. Instead of savings, we have to talk about money eventually spent by you or your heirs (MESBYOYH for short)
 
-> `income - expenses - money eventually spent by you or your heirs = $0`
+We would have to rewrite the equation as
 
-But it's just shorter to refer to "money eventually spent by you or your heirs" as savings.
+> `income - expenses - MESBYOYH = $0`
+
+But it's just shorter to refer to "money eventually spent by you or your heirs" (MESBYOYH) as savings.
 
 ### Saving for College is Different
 
