@@ -8,7 +8,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-A popular form of clickbait financial articles is those explaining how high-earning households are *actually* living basically "paycheck-to-paycheck". You'll see titles like "Barely making it on $400,000" or "$500,000 doesn't go that far for this family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
+A popular form of clickbait financial articles is those explaining how high-earning households are *actually* living basically "paycheck-to-paycheck". You'll see titles like "Barely making it on $400,000" or "$500,000 doesn't go that far for this family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really "get by" in suburban Los Angeles.
 
 This claim is almost always backed up by some variant of what I would consider one of the worst financial charts on the entire internet, courtesy of "Financial Samurai":
 
@@ -102,7 +102,7 @@ You draw a new chart that shows how to properly *account* for all the money comi
 
 "Wow", says Tommy, "I guess that's what I get for hiring a cut-rate accountant. Thanks for clearing it up for me. It's sure good to know my business is doing 40 times better than I thought!"
 
-## Discussion
+## It All Adds Up
 
 Without going deep on accounting to discuss things like depreciation, appreciation, capital gains, etc., for a family earning, spending, and saving wages, we can recognize that there is a fundamental equation in play:
 
@@ -176,7 +176,9 @@ As we can see, the family is *saving* $104,493 per year.
 
 Adding the "cash in your pocket" line item, in honor of Tommy, we get an annual savings of $104,493, and an accounting error of $0.
 
-## Discussion
+## It's a Hoax.
+
+So what's going on here?
 
 Financial Samurai's hypothetical family is increasing their net worth by approximately $104,000/year. At time of writing, the median annual income of a full-time worker in the United States was exactly half that: $52,000/year. In other words, this family is saving money at the same rate two median workers would if they had *zero* expenses (no taxes, no rent, no food, no *anything*). In 18 months, this family accumulates more money than the median American household's *entire net worth*.
 
@@ -184,7 +186,7 @@ There are obviously legitimate debates to be had about what the magical word "ri
 
 First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively affluent lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing.
 
-Second: the $34 number at the bottom of the chart is *pure fiction*. It does not correspond to any actual fact about this family's finances. You could construct this chart to make it larger, smaller, even negative if you wanted, because it's just an error.
+Second: the $34 number at the bottom of the chart is **pure fiction**. It does not correspond to any actual fact about this family's finances. You could construct this chart to make it larger, smaller, even negative if you wanted, because it's just an error.
 
 As much as we might laugh at Tommy's mistake of his missing dollar compared to the $40 of profit his business actually turned, the Financial Samurai distortion is worse: it understates this family's annual savings by a factor of *3,000*. It does not belong here in any form, and its inclusion as "cash flow" is a hoax.
 
