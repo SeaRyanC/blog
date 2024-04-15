@@ -4,9 +4,8 @@ permalink: accounting-error-is-not-cash-flow/index.html
 description: Articles describing how little money is left after a family "spends" it are frequently misleading
 date: 2024-01-27
 tags:
- - random
+ - money
 layout: layouts/post.njk
-eleventyExcludeFromCollections: true
 ---
 
 A popular form of clickbait financial articles is those explaining how high-earning households are *actually* living basically "paycheck-to-paycheck". You'll see titles like "Barely making it on $400,000" or "$500,000 doesn't go that far for this family of four". The number seems to keep going up; I expect to soon see stories on how $900,000 isn't enough money to really *get by* in suburban Los Angeles.
@@ -66,11 +65,17 @@ His accountant made a chart detailing how dire the scenario is:
 |**Total Expenses**|(39)|
 |*Remaining Cash Flow*|$1|
 
-"Hold on, Tommy." you say. "Your revenue was $100 on a cost of $50, for a profit of $50. You lost $10 to taxes, leading to $40 in net profit. You spent $10 of that at the arcade, and *saved* the other $30: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you're holding right now. All your money is accounted for and you're doing very well. Great job!".
+"Hold on, Tommy." you say, and recount his finances.
+
+"Your revenue was $100 on a cost of $50, for a profit of $50. You payed $10 in taxes, leading to **$40 in net profit**.
+
+You **spent $10** of that at the arcade, and **saved the other $30**: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you're holding right now.
+
+All your money is accounted for and you're doing very well. Great job!"
 
 Tommy seems confused. "Why did my accountant say I had one dollar leftover, then? I feel like I'm barely scraping by here."
 
-"Your accountant didn't see that dollar bill in your pocket, so he couldn't make the numbers add up to $0 like they should have. He was talking about *accounting error*. That's what it means to have money left over at the end of the accounting process."
+"Your accountant didn't see that dollar bill in your pocket, so he couldn't make the numbers add up to $0 like they should have. He was talking about **accounting error**. That's what it means to have money left over at the end of the accounting process."
 
 Tommy seems even angrier. "The numbers *have* to add up to $0? I'm always going to be broke? That's not fair! I should have way more than $1 of cash flow here based on how much lemonade I'm selling."
 
@@ -117,7 +122,7 @@ If you don't get $0 when computing income minus expenses and savings, you have *
 
 > `income - expenses - savings = accounting error`
 
-What we see in "Surviving off $400,000" is a monthly *accounting error* of $3. $3 of accounting error on a gross income of $33,333 is actually great in terms of accuracy; it means whoever prepared this chart painstakingly accounting for the family's savings and expenses, but missed by 0.01%. Perhaps they mistyped the mortgage as $6,746 when it was actually $6,749, for example. Or maybe they engineered the chart to show a tiny accounting error, misleadingly labelled it "Cash Flow", and used this numerical sleight of hand to push a preconceived ideological narrative. We'll never know.
+What we see in "Surviving off $400,000" is a monthly *accounting error* of $3. $3 of accounting error on a gross monthly income of $33,333 is actually great in terms of accuracy; it means whoever prepared this chart painstakingly accounting for the family's savings and expenses, but missed by 0.01%. Perhaps they mistyped the mortgage as $6,746 when it was actually $6,749, for example. Or maybe they engineered the chart to show a tiny accounting error, misleadingly labelled it "Cash Flow", and used this numerical sleight of hand to push a preconceived ideological narrative. We'll never know.
 
 ## Financial Samurai's Family
 
@@ -175,7 +180,7 @@ Adding the "cash in your pocket" line item, in honor of Tommy, we get an annual 
 
 Financial Samurai's hypothetical family is increasing their net worth by approximately $104,000/year. At time of writing, the median annual income of a full-time worker in the United States was exactly half that: $52,000/year. In other words, this family is saving money at the same rate two median workers would if they had *zero* expenses (no taxes, no rent, no food, no *anything*). In 18 months, this family accumulates more money than the median American household's *entire net worth*.
 
-Again, I think there are legitimate debates to be had about what the magical word "rich" means in this country, and whether Financial Samurai's hypothetical family could cut back a bit, but two things are beyond debate.
+There are obviously legitimate debates to be had about what the magical word "rich" means in this country, and whether Financial Samurai's hypothetical family could cut back a bit, but two things are beyond debate.
 
 First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively affluent lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing.
 
@@ -199,7 +204,7 @@ We would have to rewrite the equation as
 
 > `income - expenses - MESBYOYH = $0`
 
-But it's just shorter to refer to "money eventually spent by you or your heirs" (MESBYOYH) as savings.
+It doesn't seem meaningful to redefine "savings" as a thing that, by definition, can never actually happen, so let's just not do that. The family is saving money which they intend to expend later or pass to their heirs, which is what all saving is for.
 
 ### Saving for College is Different
 

@@ -7,7 +7,6 @@ tags:
  - ai
  - accessibility
 layout: layouts/post.njk
-eleventyExcludeFromCollections: true
 ---
 
 

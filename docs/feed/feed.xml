@@ -5,12 +5,472 @@
 	
 	<link href="https://searyanc.dev/feed/feed.xml" rel="self"/>
 	<link href="https://searyanc.dev/"/>
-	<updated>2023-05-27T00:00:00Z</updated>
+	<updated>2024-03-04T00:00:00Z</updated>
 	<id>https://searyanc.dev/</id>
 	<author>
 		<name>Ryan Cavanaugh</name>
 		<email></email>
 	</author>
+	
+	<entry>
+		<title>How I Use ChatGPT as an Accessibility Device</title>
+		<link href="https://searyanc.dev/llm-accessibility/"/>
+		<updated>2024-03-04T00:00:00Z</updated>
+		<id>https://searyanc.dev/llm-accessibility/</id>
+		<content type="html">&lt;h2 id=&quot;the-crash&quot; tabindex=&quot;-1&quot;&gt;The Crash &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/llm-accessibility/#the-crash&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In April 2023 I crashed my bicycle and broke both my wrists.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://searyanc.dev/img/wrists.webp&quot; alt=&quot;Me showing two freshly-wrapped wrists&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Not my finest moment.&lt;/p&gt;
+&lt;p&gt;As you can imagine, this put quite the damper on my ability to type.&lt;/p&gt;
+&lt;p&gt;Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job.
+Clicking around with a mouse on low sensitivity was fine, but large amounts of typing were off the table since I didn&#39;t have any mobility at the wrist joint.&lt;/p&gt;
+&lt;h2 id=&quot;the-doppelganger&quot; tabindex=&quot;-1&quot;&gt;The Doppelganger &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/llm-accessibility/#the-doppelganger&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I started off using the built-in speech-to-text functionality in Windows 11.
+It&#39;s quite good in terms of everyday transcription; as good as the one built into my Android phone, to be sure.
+For a lot of content like the performance reviews I was writing at the time, this was good enough as-is with some light copy editing.&lt;/p&gt;
+&lt;p&gt;However, for technical content, this left a lot to be desired.
+A lot of clarity is gained with simple formatting, like putting programming terms in &lt;code&gt;fixed-width&lt;/code&gt; font.
+For talking about TypeScript in particular, there are a lot of things that are homophonic with other more common terms, such as &lt;code&gt;variants&lt;/code&gt; vs &lt;code&gt;variance&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;I also didn&#39;t like how the default speech-to-text dealt with punctuation.
+I write a &lt;em&gt;lot&lt;/em&gt; of text every day, and my writing style is something that I feel is part of my identity.
+Seeing comments with my name attached to them, not written in my writing style, was surprisingly upsetting.
+It felt like a doppelganger wrote my content.&lt;/p&gt;
+&lt;p&gt;I surprised at how deeply uncomfortable with text that was &lt;em&gt;objectively&lt;/em&gt; fine.
+The content I was getting from the dictation software wasn&#39;t wrong, confusing, or bad. It just wasn&#39;t me. It was like seeing myself in an unreversed mirror, or trying to sign my name and seeing someone else&#39;s signature with the same letters. Getting the text to be &lt;em&gt;my&lt;/em&gt; text was too much work for the limited amount of mobility I had. I was upset.&lt;/p&gt;
+&lt;h2 id=&quot;i-cyborg&quot; tabindex=&quot;-1&quot;&gt;I, Cyborg &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/llm-accessibility/#i-cyborg&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What I needed was for someone, or some thing, with the extra context of &lt;em&gt;what I was doing&lt;/em&gt; to in order to reformat and copyedit my text exactly to my liking. I wanted commas where they belonged. I wanted formatting like I usually formatted. I didn&#39;t want to spent months sounding like a robotified version of myself.&lt;/p&gt;
+&lt;p&gt;I fired up ChatGPT and gave it the scenario. After repeated tweaking, I came up with this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Scenario: I am a maintainer on the TypeScript GitHub repo.&lt;/p&gt;
+&lt;p&gt;I have dictated a message so its punctuation, formatting, and use of homophones may be off. Please correct the text for typographical errors and apply markdown formatting to relevant terms, such as names of variables, methods functions, or types.&lt;/p&gt;
+&lt;p&gt;Do not add any extra content, preamble, or sign off, but do make corrections in cases where there is a homophone of a more common programming term in use, such as &amp;quot;to Jason&amp;quot; meaning &amp;quot;toJSON&amp;quot; in the context of JavaScript programming, or TypeScript related terms.&lt;/p&gt;
+&lt;p&gt;Also apply in-situ corrections such as &amp;quot;capital t type&amp;quot; to &amp;quot;Type&amp;quot;. Always replace &amp;quot;comma&amp;quot; with a comma character, &amp;quot;colon&amp;quot; with an actual colon, &amp;quot;dash&amp;quot; with an actual dash, and so on.&lt;/p&gt;
+&lt;p&gt;Add commas liberally if it makes the text flow better, as these are unlikely to be specified in the transcription. Be sure to correct other mistakes like your/you&#39;re errors. The message follows below the line. Reply only with the corrected message.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The results of this are &lt;em&gt;incredibly&lt;/em&gt; good.
+Even better, the fact that I could continually refine the prompt to make the corrected version more closely match what I would have typed was very powerful.&lt;/p&gt;
+&lt;p&gt;Here&#39;s an example input produced from dictation. Errors or subpar results are &lt;strong&gt;annotated&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This doesn&#39;t seem like a great &lt;strong&gt;trade off&lt;/strong&gt; in general. &lt;strong&gt;downcasting&lt;/strong&gt; to &lt;strong&gt;stringer number&lt;/strong&gt; is useful because those types are known to have particular characteristics, but downcasting to &lt;strong&gt;object&lt;/strong&gt; just leaves you worse off.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;ChatGPT transformed this to exactly what I wanted:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This doesn&#39;t seem like a great trade-off in general. Downcasting to &lt;code&gt;string&lt;/code&gt; or &lt;code&gt;number&lt;/code&gt; is useful because those types are known to have particular characteristics, but downcasting to &lt;code&gt;object&lt;/code&gt; just leaves you worse off.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This regularly makes all kinds of excellent corrections that are entirely domain-specific, such as fixing &amp;quot;bear identifier&amp;quot; to &amp;quot;bare identifier&amp;quot;.&lt;/p&gt;
+&lt;h2 id=&quot;automation&quot; tabindex=&quot;-1&quot;&gt;Automation &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/llm-accessibility/#automation&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;It wasn&#39;t too hard from here to wire up a program to pass this to the ChatGPT API automatically.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://searyanc.dev/img/streamdeck.webp&quot; alt=&quot;&amp;quot;copyedit&amp;quot; caption on a Stream Deck button with a debugger icon&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The cost to do this is effectively free.
+At a cost of $0.002 / 1,000 tokens, and a typical cost to reformat one comment of about 200 tokens, $1 can copy-edit 2,500 comments. I had found my voice again for less than the cost of a gumball.&lt;/p&gt;
+&lt;h2 id=&quot;are-we-agi-yet&quot; tabindex=&quot;-1&quot;&gt;Are we AGI yet? &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/llm-accessibility/#are-we-agi-yet&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There&#39;s a lot of AI hype, but LLMs are factually revolutionary in the scenario I found myself in. The situation before was intractable: No existing software did the job, it would be a multimillion-dollar effort to write said software, and hiring a human to do the job would be either impossible or thousands of times more expensive. The situation after is easy: in a couple afternoons of messing around, even in my limited state, I got a working solution that completely solved the problem.&lt;/p&gt;
+&lt;p&gt;For all intents and purposes, this is super-human levels of performance, because a human who can and will do this task doesn&#39;t exist. You cannot hire a copy editor who is also deeply familiar with the terminology of JavaScript type systems -- anyone with those skills has something much better to be doing with their time.&lt;/p&gt;
+&lt;p&gt;I&#39;m excited about the future of AI as something that can improve accessibility more generally, but even now that I can type again, I expect to use this workflow more regularly because it&#39;s just &lt;em&gt;faster&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;the-next-accessibility-frontier&quot; tabindex=&quot;-1&quot;&gt;The Next Accessibility Frontier &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/llm-accessibility/#the-next-accessibility-frontier&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I was fortunate enough to regain full use of my hands, but many people in this kind of situation won&#39;t, and as accessibility advocates will tell you, everyone is only temporarily able-bodied in the long-run. I&#39;ve been thinking a lot about how there are so many tasks that people with various disabilities need help with, but for which the only solutions available right now are not cost-effective or scalable.&lt;/p&gt;
+&lt;!--
+Here&#39;s a short list of some of the things I&#39;ve been thinking about. In all cases, of course, the user&#39;s consent needs to be integrated into these experiences, and appropriate safeguards must be in place. These are just sketches of what might be possible.
+
+### Speech Impairments
+
+Some disabilities leave people completely unable to speak, or unable to be heard in noisy environments. A person with such a disability might have significant difficulties in situations like an airport check-in desk, where someone needs to ask you many non-yes-or-no questions, but for which you can easily have pre-determined answers. An AI assistant should have no problems responding to questions like &quot;What is your name, date of birth, and where are you traveling to today?&quot;
+
+--&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Accounting Error is not Cash Flow</title>
+		<link href="https://searyanc.dev/accounting-error-is-not-cash-flow/"/>
+		<updated>2024-01-27T00:00:00Z</updated>
+		<id>https://searyanc.dev/accounting-error-is-not-cash-flow/</id>
+		<content type="html">&lt;p&gt;A popular form of clickbait financial articles is those explaining how high-earning households are &lt;em&gt;actually&lt;/em&gt; living basically &amp;quot;paycheck-to-paycheck&amp;quot;. You&#39;ll see titles like &amp;quot;Barely making it on $400,000&amp;quot; or &amp;quot;$500,000 doesn&#39;t go that far for this family of four&amp;quot;. The number seems to keep going up; I expect to soon see stories on how $900,000 isn&#39;t enough money to really &lt;em&gt;get by&lt;/em&gt; in suburban Los Angeles.&lt;/p&gt;
+&lt;p&gt;This claim is almost always backed up by some variant of what I would consider one of the worst financial charts on the entire internet, courtesy of &amp;quot;Financial Samurai&amp;quot;:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://searyanc.dev/img/400K-budget.webp&quot; alt=&quot;A chart showing a list of expenses which will be detailed later&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The chart here claims to compute an &lt;em&gt;annual&lt;/em&gt; &amp;quot;cash flow&amp;quot; of $34, or $3 per month.&lt;/p&gt;
+&lt;p&gt;$3. Not even enough to buy a latte. This family is teetering on the brink of financial collapse. They&#39;re basically living paycheck-to-paycheck, after all, with only $3 left to their names at the end of the month.&lt;/p&gt;
+&lt;p&gt;Commentors on the internet often dissect this chart line-by-line, pointing out that the family could spend less on vacations, or move to a smaller home, or eat more cheaply, or attend public schools, or are at a lifetime highpoint of mandatory expenditures due to having two small children. These comments are not wrong, but they&#39;re missing the point.&lt;/p&gt;
+&lt;p&gt;The reality is that this chart is incredibly disingenuous because it confuses &lt;em&gt;expenditures&lt;/em&gt; and &lt;em&gt;savings&lt;/em&gt;, intentionally, to make it look like this family is much worse off than they actually are. The bottom-line number of $34 in annual &amp;quot;cash flow&amp;quot; is nothing short of a lie.&lt;/p&gt;
+&lt;p&gt;What this chart is demonstrating is &lt;em&gt;accounting error&lt;/em&gt;: The person making the chart failed to make the columns add up to $0 as they should have, and uses that failure to advance a false narrative about the state of this family&#39;s finances.&lt;/p&gt;
+&lt;p&gt;Let&#39;s talk about why, and how to fix it. But first, a story.&lt;/p&gt;
+&lt;h2 id=&quot;tommy&#39;s-lemonade-stand&quot; tabindex=&quot;-1&quot;&gt;Tommy&#39;s Lemonade Stand &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#tommy&#39;s-lemonade-stand&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Your nephew, Tommy, has set up a lemonade stand. It seems to be doing great. At the end of the week, you ask how business is going.&lt;/p&gt;
+&lt;p&gt;&amp;quot;I&#39;m barely surviving!&amp;quot; he says.&lt;/p&gt;
+&lt;p&gt;&amp;quot;How so? I saw a long line around the block when I stopped by&amp;quot; you reply.&lt;/p&gt;
+&lt;p&gt;Tommy, furious, pulls a single dollar bill out of his pocket. He begins his rant:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I talked to my accountant and here&#39;s where I stand. I sold 100 cups of lemonade for $1 each, so have $100 in income.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The lemons and sugar cost me $50, and I paid another $10 in taxes.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I put $20 into my piggy bank, spent $10 at the arcade, stuffed $5 under my mattress, and deposited $4 into my savings account.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;At the end of the week, I only have $1 of cash flow after expenses to pay for miscellaneous! One miserable buck!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://searyanc.dev/img/lemonade.webp&quot; alt=&quot;A sad boy with a single dollar bill&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;He complains as he waves the dollar around in his hand. &amp;quot;A single dollar more in taxes and I&#39;m in the red!&amp;quot;&lt;/p&gt;
+&lt;p&gt;His accountant made a chart detailing how dire the scenario is:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Tommy&#39;s P&amp;amp;L&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Gains/Loss&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Sales&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total Income&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lemons&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(25)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sugar&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(25)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Taxes&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(10)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Net Income&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$40&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Piggy Bank&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(20)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Arcade&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(10)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mattress&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(5)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Savings Account&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(4)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total Expenses&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;(39)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Remaining Cash Flow&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;quot;Hold on, Tommy.&amp;quot; you say, and recount his finances.&lt;/p&gt;
+&lt;p&gt;&amp;quot;Your revenue was $100 on a cost of $50, for a profit of $50. You payed $10 in taxes, leading to &lt;strong&gt;$40 in net profit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;You &lt;strong&gt;spent $10&lt;/strong&gt; of that at the arcade, and &lt;strong&gt;saved the other $30&lt;/strong&gt;: $20 in your piggy bank, $5 under your mattress, $4 in your savings account, and the $1 which you&#39;re holding right now.&lt;/p&gt;
+&lt;p&gt;All your money is accounted for and you&#39;re doing very well. Great job!&amp;quot;&lt;/p&gt;
+&lt;p&gt;Tommy seems confused. &amp;quot;Why did my accountant say I had one dollar leftover, then? I feel like I&#39;m barely scraping by here.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Your accountant didn&#39;t see that dollar bill in your pocket, so he couldn&#39;t make the numbers add up to $0 like they should have. He was talking about &lt;strong&gt;accounting error&lt;/strong&gt;. That&#39;s what it means to have money left over at the end of the accounting process.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Tommy seems even angrier. &amp;quot;The numbers &lt;em&gt;have&lt;/em&gt; to add up to $0? I&#39;m always going to be broke? That&#39;s not fair! I should have way more than $1 of cash flow here based on how much lemonade I&#39;m selling.&amp;quot;&lt;/p&gt;
+&lt;p&gt;You draw a new chart that shows how to properly &lt;em&gt;account&lt;/em&gt; for all the money coming and going through Tommy&#39;s operation:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Inflow&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Outflow&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Income&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sales&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$100&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Expenses&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Lemons&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Sugar&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Taxes&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Spending&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Arcade&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Saving&lt;/strong&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Piggy Bank&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mattress&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Savings Account&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pocket Dollar&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Total&lt;/em&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$100&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&amp;quot;Your cash flow is $40, because that&#39;s how much money you had after subtracting your expenses from your income. The $1 was the accounting error, not the cash flow. You need to find an accountant who knows what they&#39;re talking about. And if your taxes go up by $5, you can choose to spend less at the arcade, or you can save less. It&#39;s up to you, but your business will still be turning a tidy profit. I wouldn&#39;t worry about it.&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot;Wow&amp;quot;, says Tommy, &amp;quot;I guess that&#39;s what I get for hiring a cut-rate accountant. Thanks for clearing it up for me. It&#39;s sure good to know my business is doing 40 times better than I thought!&amp;quot;&lt;/p&gt;
+&lt;h2 id=&quot;discussion&quot; tabindex=&quot;-1&quot;&gt;Discussion &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#discussion&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Without going deep on accounting to discuss things like depreciation, appreciation, capital gains, etc., for a family earning, spending, and saving wages, we can recognize that there is a fundamental equation in play:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;income - expenses = savings&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Every dollar you earn is either &lt;em&gt;spent&lt;/em&gt; (which includes mandatory expenditures like taxes) or &lt;em&gt;saved&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What Tommy (and the Financial Samurai) attempted to do was rewrite the equation:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;income - expenses - savings = &amp;quot;cash flow&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;However, the correct formula here, as any Algebra 1 student could rearrange, is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;income - expenses - savings = $0&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you don&#39;t get $0 when computing income minus expenses and savings, you have &lt;em&gt;accounting error&lt;/em&gt;: Somewhere, you didn&#39;t find a source of savings or source of expenditures to make the numbers balance out. Indeed, we have to fix the equation to account for this possibility:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;income - expenses - savings = accounting error&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What we see in &amp;quot;Surviving off $400,000&amp;quot; is a monthly &lt;em&gt;accounting error&lt;/em&gt; of $3. $3 of accounting error on a gross monthly income of $33,333 is actually great in terms of accuracy; it means whoever prepared this chart painstakingly accounting for the family&#39;s savings and expenses, but missed by 0.01%. Perhaps they mistyped the mortgage as $6,746 when it was actually $6,749, for example. Or maybe they engineered the chart to show a tiny accounting error, misleadingly labelled it &amp;quot;Cash Flow&amp;quot;, and used this numerical sleight of hand to push a preconceived ideological narrative. We&#39;ll never know.&lt;/p&gt;
+&lt;h2 id=&quot;financial-samurai&#39;s-family&quot; tabindex=&quot;-1&quot;&gt;Financial Samurai&#39;s Family &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#financial-samurai&#39;s-family&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Let&#39;s fix Financial Samurai&#39;s chart.&lt;/p&gt;
+&lt;p&gt;There are three primary sources of error that confuse savings with expenditures: The 401(k), 529 plan, and the principal component of the mortgage. Like many Americans, the last of these accounts for a large majority of their annual increase in net worth.&lt;/p&gt;
+&lt;p&gt;For the 401(k), this is unambiguously savings, albeit pre-tax dollars that will be worth less upon their eventual withdrawal due to paying taxes at that time. For a fair accounting, I adjusted this to assume a 24% average tax rate paid upon withdrawal, booking the future tax expenditure now so that the savings numbers are in uniformly post-tax dollars.&lt;/p&gt;
+&lt;p&gt;The 529 plan is, of course, also just savings. The full $18,000 is accounted for as savings.&lt;/p&gt;
+&lt;p&gt;To account for the principal reduction in the mortgage, which is also a form of savings, I used an average rate of 65% principal, 35% interest, which is representative of what will happen over the entire lifetime of a 30-year loan. This results in booking $52,619 of savings.&lt;/p&gt;
+&lt;p&gt;There&#39;s also the matter of the car payment. This is definitely a form of savings, since they&#39;re paying off a loan. At the end of the loan, they&#39;ll still have the car, but the loan payment will stop. The car still has value, increasing their net worth. However, the car is also depreciating, so I&#39;ll err on the side of caution here and assume that the car is depreciating at the unrealistic rate of being worth $0 at the end of the loan.&lt;/p&gt;
+&lt;p&gt;I also had to normalize the income portion of the chart to account for some hand-wavey math around tax credits that isn&#39;t really explained. The fixed version looks like this:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Spent/(Earned)&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Saved&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Income&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;($400,000)&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;401k&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$9,360&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$29,640&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Taxes&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$96,870&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Daycare&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$37,200&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Preschool&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$26,400&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Food&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$24,000&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;529 Plan&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$18,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mortgage&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$28,333&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$52,619&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Property tax&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$24,804&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Property insurance&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1,560&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Property maintenance&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$2,760&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Utilities&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$4,200&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Life insurance&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1,440&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Umbrella policy&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$540&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Health Care&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$7,440&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Baby &amp;amp; toddler items&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$2,400&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Three weeks of vacation&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$7,200&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Entertainment&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$3,600&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Car payment&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$4,200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Car depreciation&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$4,200&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Car ins./maintenance&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1,800&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gas&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$2,400&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mobile phone&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1,800&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Clothes for four&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$2,400&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Personal care products&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1,800&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Charity&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$3,000&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cash in your pocket&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$34&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Total&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$(104,493)&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$104,493&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Accounting Error&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$0&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;As we can see, the family is &lt;em&gt;saving&lt;/em&gt; $104,493 per year.&lt;/p&gt;
+&lt;p&gt;Adding the &amp;quot;cash in your pocket&amp;quot; line item, in honor of Tommy, we get an annual savings of $104,493, and an accounting error of $0.&lt;/p&gt;
+&lt;h2 id=&quot;discussion-1&quot; tabindex=&quot;-1&quot;&gt;Discussion &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#discussion-1&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Financial Samurai&#39;s hypothetical family is increasing their net worth by approximately $104,000/year. At time of writing, the median annual income of a full-time worker in the United States was exactly half that: $52,000/year. In other words, this family is saving money at the same rate two median workers would if they had &lt;em&gt;zero&lt;/em&gt; expenses (no taxes, no rent, no food, no &lt;em&gt;anything&lt;/em&gt;). In 18 months, this family accumulates more money than the median American household&#39;s &lt;em&gt;entire net worth&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;There are obviously legitimate debates to be had about what the magical word &amp;quot;rich&amp;quot; means in this country, and whether Financial Samurai&#39;s hypothetical family could cut back a bit, but two things are beyond debate.&lt;/p&gt;
+&lt;p&gt;First: this family is saving money at a rate that is impossible for the median household, while simultaneously living an objectively affluent lifestyle. The median American household spends a third as much on food, half as much on entertainment, a third as much on personal care, and a bit more than half as much on clothing.&lt;/p&gt;
+&lt;p&gt;Second: the $34 number at the bottom of the chart is &lt;em&gt;pure fiction&lt;/em&gt;. It does not correspond to any actual fact about this family&#39;s finances. You could construct this chart to make it larger, smaller, even negative if you wanted, because it&#39;s just an error.&lt;/p&gt;
+&lt;p&gt;As much as we might laugh at Tommy&#39;s mistake of his missing dollar compared to the $40 of profit his business actually turned, the Financial Samurai distortion is worse: it understates this family&#39;s annual savings by a factor of &lt;em&gt;3,000&lt;/em&gt;. It does not belong here in any form, and its inclusion as &amp;quot;cash flow&amp;quot; is a hoax.&lt;/p&gt;
+&lt;p&gt;Sadly, many major news outlets, including those who should have the financial savvy to recognize this total bamboozle of a chart, have run with this or a similar version of it when talking about the finances of higher-earning households. We can and should do better.&lt;/p&gt;
+&lt;h2 id=&quot;objections&quot; tabindex=&quot;-1&quot;&gt;Objections &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#objections&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;saving-for-future-expenses-is-an-expense&quot; tabindex=&quot;-1&quot;&gt;Saving for Future Expenses is an Expense &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#saving-for-future-expenses-is-an-expense&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;You might point to the line item for 529 and say, since this money will eventually be spent on college tuition, it isn&#39;t really savings at all, but rather an expenditure that we&#39;re booking now instead of later. The same for 401(k) contributions -- these dollars will likely be spent in retirement, thus are future expenditures.&lt;/p&gt;
+&lt;p&gt;Much like the original chart misappropriates what &amp;quot;cash flow&amp;quot; is, this objection misappropriates what &amp;quot;savings&amp;quot; means. The final fate of every saved dollar is either to be spent on something, or passed on to your heirs when you die, who will then have to either spend that dollar or pass it on to &lt;em&gt;their&lt;/em&gt; heirs, and so on. Every dollar is eventually spent.&lt;/p&gt;
+&lt;p&gt;Under the &amp;quot;every dollar saved is eventually spent, thus is not saved&amp;quot; definition, no money is &lt;em&gt;ever&lt;/em&gt; saved. Instead of savings, we have to talk about money eventually spent by you or your heirs (MESBYOYH for short)&lt;/p&gt;
+&lt;p&gt;We would have to rewrite the equation as&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;income - expenses - MESBYOYH = $0&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It doesn&#39;t seem meaningful to redefine &amp;quot;savings&amp;quot; as a thing that, by definition, can never actually happen, so let&#39;s just not do that. The family is saving money which they intend to expend later or pass to their heirs, which is what all saving is for.&lt;/p&gt;
+&lt;h3 id=&quot;saving-for-college-is-different&quot; tabindex=&quot;-1&quot;&gt;Saving for College is Different &lt;a class=&quot;direct-link&quot; href=&quot;https://searyanc.dev/accounting-error-is-not-cash-flow/#saving-for-college-is-different&quot; aria-hidden=&quot;true&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Maybe there&#39;s some sense in which saving for college is different, because it does feel like a sort of mandatory future expenditure.&lt;/p&gt;
+&lt;p&gt;Under this family&#39;s given budget, doing so would be unambiguously double-dipping: They&#39;re currently spending $63,000/year on daycare and private school, which is enough to cover in-state tuition at a reputable school for two students (in-state expenses at time of writing for University of Washington is $34,000 per off-campus student).&lt;/p&gt;
+&lt;p&gt;To put it another way, let&#39;s say you spent $20 eating out today, and $20 at the grocery store buying food for tomorrow. Even though the amount of money you spent on food today was $40, it&#39;s not accurate to say your &lt;em&gt;daily food budget&lt;/em&gt; is $40. It&#39;s $20 today, and $20 tomorrow.&lt;/p&gt;
+&lt;p&gt;We could certainly categorize the family&#39;s savings into earmarked savings and non-earmarked savings. Under this metric, the house payment becomes $52,000 of eventually-inherited wealth, and the remainder is earmarked savings that will be spent down in retirement. With 20 years of such savings, they&#39;ll be passing down an estate worth over &lt;em&gt;a million dollars&lt;/em&gt; to their heirs. The median inheritance in the United States is $69,000, or less than a year and a half of non-earmarked savings for our &amp;quot;cash-strapped&amp;quot; family. Not too shabby.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>scadr: renders multi-part OpenSCAD files</title>
