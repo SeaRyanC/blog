@@ -1,3 +1,4 @@
+To build:
 ```
 npx eleventy
 ```
