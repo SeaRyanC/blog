@@ -10,6 +10,7 @@ layout: layouts/post.njk
 Almost every 3D printer supports monophonic beeps. You can use this to have it play a little tune when your print is done. Of course, the best song you can play is the opening riff from the [Final Fantasy victory fanfare](https://www.youtube.com/watch?v=PZ_7ipJ6Cx8).
 
 In Cura, go here:
+
  * Preferences
  * Printers
  * (Your printer)

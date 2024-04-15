@@ -24,11 +24,16 @@
     <main class="tmpl-post">
       <h1>How I Use ChatGPT as an Accessibility Device</h1><a href="/tags/ai/" class="post-tag">ai</a><a href="/tags/accessibility/" class="post-tag">accessibility</a>
 
-<p>In April 2023 I crashed my bicycle and broke both my wrists.
-As you can imagine, this put quite the damper on my ability to type.
-Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job.</p>
-<p>I started  off using the built-in speech-to-text functionality in Windows 11.
-It's <em>quite</em> good in terms of everyday transcription; as good as the one built into my Android phone, to be sure.
+<h2 id="the-crash" tabindex="-1">The Crash <a class="direct-link" href="#the-crash" aria-hidden="true">#</a></h2>
+<p>In April 2023 I crashed my bicycle and broke both my wrists.</p>
+<p><img src="/img/wrists.webp" alt="Me showing two freshly-wrapped wrists"></p>
+<p>Not my finest moment.</p>
+<p>As you can imagine, this put quite the damper on my ability to type.</p>
+<p>Since my brain and mouth were still in working order, I figured that I could use speech-to-text to do most of my job, since as a dev manager, most of my time is spent either in meetings, or writing text related to my job.
+Clicking around with a mouse on low sensitivity was fine, but large amounts of typing were off the table since I didn't have any mobility at the wrist joint.</p>
+<h2 id="the-doppelganger" tabindex="-1">The Doppelganger <a class="direct-link" href="#the-doppelganger" aria-hidden="true">#</a></h2>
+<p>I started off using the built-in speech-to-text functionality in Windows 11.
+It's quite good in terms of everyday transcription; as good as the one built into my Android phone, to be sure.
 For a lot of content like the performance reviews I was writing at the time, this was good enough as-is with some light copy editing.</p>
 <p>However, for technical content, this left a lot to be desired.
 A lot of clarity is gained with simple formatting, like putting programming terms in <code>fixed-width</code> font.
@@ -36,8 +41,11 @@ For talking about TypeScript in particular, there are a lot of things that are h
 <p>I also didn't like how the default speech-to-text dealt with punctuation.
 I write a <em>lot</em> of text every day, and my writing style is something that I feel is part of my identity.
 Seeing comments with my name attached to them, not written in my writing style, was surprisingly upsetting.
-It felt like a doppleganger wrote my content.</p>
-<p>What I needed was for someone, or some thing, with the extra context of <em>what I was doing</em> to in order to reformat and copyedit my text exactly to my liking.</p>
+It felt like a doppelganger wrote my content.</p>
+<p>I surprised at how deeply uncomfortable with text that was <em>objectively</em> fine.
+The content I was getting from the dictation software wasn't wrong, confusing, or bad. It just wasn't me. It was like seeing myself in an unreversed mirror, or trying to sign my name and seeing someone else's signature with the same letters. Getting the text to be <em>my</em> text was too much work for the limited amount of mobility I had. I was upset.</p>
+<h2 id="i-cyborg" tabindex="-1">I, Cyborg <a class="direct-link" href="#i-cyborg" aria-hidden="true">#</a></h2>
+<p>What I needed was for someone, or some thing, with the extra context of <em>what I was doing</em> to in order to reformat and copyedit my text exactly to my liking. I wanted commas where they belonged. I wanted formatting like I usually formatted. I didn't want to spent months sounding like a robotified version of myself.</p>
 <p>I fired up ChatGPT and gave it the scenario. After repeated tweaking, I came up with this:</p>
 <blockquote>
 <p>Scenario: I am a maintainer on the TypeScript GitHub repo.</p>
@@ -47,23 +55,35 @@ It felt like a doppleganger wrote my content.</p>
 <p>Add commas liberally if it makes the text flow better, as these are unlikely to be specified in the transcription. Be sure to correct other mistakes like your/you're errors. The message follows below the line. Reply only with the corrected message.</p>
 </blockquote>
 <p>The results of this are <em>incredibly</em> good.
-Even better, the fact that I can continually refine the prompt to make the corrected version more closely match what I would have typed is very powerful.</p>
+Even better, the fact that I could continually refine the prompt to make the corrected version more closely match what I would have typed was very powerful.</p>
 <p>Here's an example input produced from dictation. Errors or subpar results are <strong>annotated</strong></p>
 <blockquote>
 <p>This doesn't seem like a great <strong>trade off</strong> in general. <strong>downcasting</strong> to <strong>stringer number</strong> is useful because those types are known to have particular characteristics, but downcasting to <strong>object</strong> just leaves you worse off.</p>
 </blockquote>
 <p>ChatGPT transformed this to exactly what I wanted:</p>
 <blockquote>
-<p>This doesn't seem like a great trade-off in general. Downcasting to <code>string</code> or <code>number</code> is useful because those types are known to have particular characteristics, but downcasting to <code>object</code> just leaves you worse off than you were before in the vast majority of cases without providing any additional type safety.</p>
+<p>This doesn't seem like a great trade-off in general. Downcasting to <code>string</code> or <code>number</code> is useful because those types are known to have particular characteristics, but downcasting to <code>object</code> just leaves you worse off.</p>
 </blockquote>
 <p>This regularly makes all kinds of excellent corrections that are entirely domain-specific, such as fixing &quot;bear identifier&quot; to &quot;bare identifier&quot;.</p>
-<p>I wrote a C# program to grab the active text from the current textbox using the Windows Accessibility API, pass the prewritten prompt + that text into the <code>gpt-3.5-turbo</code> API, and push the result back into the textbox.
-Then I wired up that invocation to a button on my Stream Deck</p>
-<p><img src="/img/stream-deck-gpt.jpg" alt="&quot;copyedit&quot; caption on a Stream Deck button with a debugger icon"></p>
+<h2 id="automation" tabindex="-1">Automation <a class="direct-link" href="#automation" aria-hidden="true">#</a></h2>
+<p>It wasn't too hard from here to wire up a program to pass this to the ChatGPT API automatically.</p>
+<p><img src="/img/streamdeck.webp" alt="&quot;copyedit&quot; caption on a Stream Deck button with a debugger icon"></p>
 <p>The cost to do this is effectively free.
-At a cost of $0.002 / 1,000 tokens, and a typical cost to reformat one comment of about 200 tokens, $1 can copy-edit 2,500 comments.</p>
-<p>I'm incredibly excited about the future of AI as something that can improve accessibility more generally, but even now that I can type again, I expect to use this workflow more regularly because it's just <em>faster</em>.</p>
+At a cost of $0.002 / 1,000 tokens, and a typical cost to reformat one comment of about 200 tokens, $1 can copy-edit 2,500 comments. I had found my voice again for less than the cost of a gumball.</p>
+<h2 id="are-we-agi-yet" tabindex="-1">Are we AGI yet? <a class="direct-link" href="#are-we-agi-yet" aria-hidden="true">#</a></h2>
+<p>There's a lot of AI hype, but LLMs are factually revolutionary in the scenario I found myself in. The situation before was intractable: No existing software did the job, it would be a multimillion-dollar effort to write said software, and hiring a human to do the job would be either impossible or thousands of times more expensive. The situation after is easy: in a couple afternoons of messing around, even in my limited state, I got a working solution that completely solved the problem.</p>
+<p>For all intents and purposes, this is super-human levels of performance, because a human who can and will do this task doesn't exist. You cannot hire a copy editor who is also deeply familiar with the terminology of JavaScript type systems -- anyone with those skills has something much better to be doing with their time.</p>
+<p>I'm excited about the future of AI as something that can improve accessibility more generally, but even now that I can type again, I expect to use this workflow more regularly because it's just <em>faster</em>.</p>
+<h2 id="the-next-accessibility-frontier" tabindex="-1">The Next Accessibility Frontier <a class="direct-link" href="#the-next-accessibility-frontier" aria-hidden="true">#</a></h2>
+<p>I was fortunate enough to regain full use of my hands, but many people in this kind of situation won't, and as accessibility advocates will tell you, everyone is only temporarily able-bodied in the long-run. I've been thinking a lot about how there are so many tasks that people with various disabilities need help with, but for which the only solutions available right now are not cost-effective or scalable.</p>
+<!--
+Here's a short list of some of the things I've been thinking about. In all cases, of course, the user's consent needs to be integrated into these experiences, and appropriate safeguards must be in place. These are just sketches of what might be possible.
 
+### Speech Impairments
+
+Some disabilities leave people completely unable to speak, or unable to be heard in noisy environments. A person with such a disability might have significant difficulties in situations like an airport check-in desk, where someone needs to ask you many non-yes-or-no questions, but for which you can easily have pre-determined answers. An AI assistant should have no problems responding to questions like "What is your name, date of birth, and where are you traveling to today?"
+
+-->
 
     </main>
 

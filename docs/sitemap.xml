@@ -32,17 +32,17 @@
   </url>
   
   <url>
+    <loc>https://searyanc.dev/tags/pixels/</loc>
+    <lastmod>2023-05-25</lastmod>
+  </url>
+  
+  <url>
     <loc>https://searyanc.dev/tags/typescript/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
   <url>
     <loc>https://searyanc.dev/tags/openscad/</loc>
-    <lastmod>2023-05-25</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://searyanc.dev/tags/pixels/</loc>
     <lastmod>2023-05-25</lastmod>
   </url>
   
@@ -54,5 +54,10 @@
   <url>
     <loc>https://searyanc.dev/posts/scadr/</loc>
     <lastmod>2023-05-27</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://searyanc.dev/CONTRIBUTING/</loc>
+    <lastmod>2024-04-15</lastmod>
   </url>
 </urlset>
